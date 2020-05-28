@@ -1,5 +1,7 @@
 # Configuration & Setup
 
+## Introduction
+
 SendPortal comes packaged with a command-line setup utility that will get you up and running in no time. It will attempt to automatically configure SendPortal and create a default user account and workspace for administrative purposes.
 
 ## Setup Command
