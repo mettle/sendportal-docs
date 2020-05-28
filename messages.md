@@ -2,7 +2,7 @@
 
 ## Overview
 
-After a campaign has been dispatched, a message will be generated for each targeted Subscriber. A Message represents a single email. You can view all of your Messages by clicking the _Messages_ link in the sidebar. You will notice that there are two types of Message:
+After a campaign has been dispatched, a message will be generated for each targeted Subscriber. A message represents a single email. You can view all of your messages by clicking the _Messages_ link in the sidebar. You will notice that there are two types of message:
 
 ### Drafts
 

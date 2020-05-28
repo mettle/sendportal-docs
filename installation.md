@@ -32,7 +32,7 @@ git clone https://github.com/sendportal/sendportal.git
 
 Once cloned, navigate to the project's root directory and run `composer install` to install SendPortal and its dependencies.
 
-From here, you can move onto the [Configuration & Setup](/docs/configuration-and-setup) step.
+From here, you can move onto the [Configuration & Setup](/docs/gettings-started/configuration-and-setup) step.
 
 ### With Your Own Host Project
 
@@ -54,4 +54,4 @@ Now that the package is installed, it's time to configure your environment. Edit
 
 Next, you must navigate to your `config/auth.php` file and change the default `providers.users.model` value to `\Sendportal\Base\Models\User::class`. This will allow the SendPortal package to manage user authentication.
 
-SendPortal should now be successfully installed. You can now follow the [Configuration & Setup](/docs/configuration-and-setup) process.
+SendPortal should now be successfully installed. You can now follow the [Configuration & Setup](/docs/getting-started/configuration-and-setup) process.

@@ -2,12 +2,12 @@
 
 ## Overview
 
-A Campaign is a set of individual email messages that are sent to your Subscribers. An example may be a new product launch or a regular newsletter.
+A campaign is a set of individual email messages that are sent to your [subscribers](/docs/features/subscribers). An example may be a new product launch or a regular newsletter.
 
-> Before creating a Campaign, the following must already be configured:
-> - at least one email service.
-> - a list of subscribers to target with your campaign.
-> - an email template for your campaign (optional, but recommended).
+> Before creating a campaign, the following must already be configured:
+> - at least one [email service](/docs/email-services/email-services-introduction).
+> - a list of [subscribers](/docs/features/subscribers) to target with your campaign.
+> - an [email template](/docs/features/templates) for your campaign (optional, but recommended).
 
 ## View Campaigns
 
@@ -33,7 +33,7 @@ Also known as the the email sender name. This tells the mail recipients who sent
 
 #### From Email
 
-This is what your mail recipients will see as the "from" address. This should be an address that you have ownership of and must match the settings for the selected Email Service.
+This is what your mail recipients will see as the "from" address. This should be an address that you have ownership of and must match the settings for the selected email service.
 
 #### Template (optional)
 
@@ -41,11 +41,11 @@ The template that you wish to use for your campaign email.
 
 #### Track Opens
 
-Determines whether or not individual email opens are tracked. If you wish to track opens, webhooks must be configured for your Email Service.
+Determines whether or not individual email opens are tracked. If you wish to track opens, webhooks must be configured for your email service.
 
 #### Track Clicks
 
-Determines whether or not individual email clicks are tracked. If you wish to track clicks, webhooks must be configured for your Email Service.
+Determines whether or not individual email clicks are tracked. If you wish to track clicks, webhooks must be configured for your email service.
 
 #### Content
 
@@ -61,7 +61,7 @@ Campaigns are dispatched from the preview page.
 
 ### Test Email
 
-It's good practice to send out a test email before you dispatch your campaign. This allows you to see how your email will appear to your recipients and offers an opportunity to pick up on any mistakes you may have made. To send a test email, simply enter an email address in the `Recipient` field and click _Send Test Email_. It will be dispatched using your configured Email Service.
+It's good practice to send out a test email before you dispatch your campaign. This allows you to see how your email will appear to your recipients and offers an opportunity to pick up on any mistakes you may have made. To send a test email, simply enter an email address in the `Recipient` field and click _Send Test Email_. It will be dispatched using your configured email service.
 
 ### Sending Options
 

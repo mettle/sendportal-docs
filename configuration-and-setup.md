@@ -78,7 +78,7 @@ php artisan vendor:publish --provider=Sendportal\\Base\\SendportalBaseServicePro
 
 If you do not use the setup command to create a workspace and user with which to administer SendPortal, you will need to go through the web interface registration process.
 
-For this to function, you need to enable registration by adding the `SENDPORTAL_REGISTER=true` parameter to your `.env` file and additional email configuration will be necessary. In particular, the Email setup specified in the Additional Configuration section must be completed in order for registration to work.
+For this to function, you need to enable registration by adding the `SENDPORTAL_REGISTER=true` parameter to your `.env` file and additional email configuration will be necessary. In particular, the User Management Email setup specified in the Additional Configuration section must be completed in order for registration to work.
 
 The same configuration above is necessary for the new user invitation process to be working.
 
@@ -157,7 +157,7 @@ In order to use user management functionality (for example, inviting new users o
 
 > If you are not going to be inviting any other users or team members to your SendPortal installation, then this section can be ignored.
 
-> There is no relationship between SendPortal's internal mail configuration and any Email Services that are configured for a workspace.
+> There is no relationship between SendPortal's internal mail configuration and any email services that are configured for a workspace.
 
 > Make sure the registration functionality is enabled by the `SENDPORTAL_REGISTER=true` parameter.
 

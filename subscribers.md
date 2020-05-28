@@ -2,9 +2,9 @@
 
 ## Overview
 
-Subscribers represent individuals that are available to you when sending out campaigns. Subscribers can optionally belong to one or more [Segments](/docs/segments).
+Subscribers represent individuals that are available to you when sending out campaigns. Subscribers can optionally belong to one or more [segments](/docs/features/segments).
 
-> The email address for each Subscriber must be unique in each [Workspace](/docs/workspaces).
+> The email address for each Subscriber must be unique in each [workspace](/docs/features/workspaces).
 
 ## View Subscribers
 
@@ -27,9 +27,9 @@ To view an individual subscriber, head to the subscribers index page and click o
 
 ### Subscriber Details
 
-Each Subscriber's email, first name, last name and subscription status is displayed when viewing an individual subscriber.
+Each subscriber's email, first name, last name and subscription status is displayed when viewing an individual subscriber.
 
-In addition, if the subscriber is in any [Segments](/docs/segments) then these are also displayed.
+In addition, if the subscriber is in any [segments](/docs/segments) then these are also displayed.
 
 ### Messages
 
@@ -63,7 +63,7 @@ The following information can be saved for each Subscriber:
 
 ### CSV Imports
 
-SendPortal allows you to easily import multiple Subscribers via a CSV upload. This can be used to create new subscribers and update existing ones.
+SendPortal allows you to easily import multiple subscribers via a CSV upload. This can be used to create new subscribers and update existing ones.
 
 To import subscribers via CSV, click the _Subscribers_ link in the sidebar. From there, click the overflow menu button and then _Import Subscribers_.
 
@@ -71,8 +71,8 @@ To import subscribers via CSV, click the _Subscribers_ link in the sidebar. From
 
 The following fields are available in the CSV.
 
-- `id` (optional) - The ID field is only used when updating existing Subscribers, and must be set if you wish to update the Subscriber's email address. The `id` field should be present but left empty when importing new Subscribers.
-- `email` (required) - A unique email address for the Subscriber. Note that if the email address is already present in SendPortal, the row will instead update the `first_name` and `last_name` of the existing Subscriber.
+- `id` (optional) - The ID field is only used when updating existing subscribers, and must be set if you wish to update the subscriber's email address. The `id` field should be present but left empty when importing new subscribers.
+- `email` (required) - A unique email address for the subscriber. Note that if the email address is already present in SendPortal, the row will instead update the `first_name` and `last_name` of the existing subscriber.
 - `first_name` (optional) - The subscriber's first name.
 - `last_name` (optional) - The subscriber's last name.
 
@@ -92,7 +92,7 @@ Segments can be chosen for subscribers by using the `Segments` selector. If you 
 
 ### API
 
-Refer to the [Subscribers API Documentation](/docs/api-subscribers) for information on how to manage subscribers through the API.
+Refer to the [subscribers API documentation](/docs/api/api-subscribers) for information on how to manage subscribers through the API.
 
 ## Exporting Subscribers
 
@@ -106,7 +106,7 @@ To manually unsubscribe a subscriber, you should go to the subscriber edit page,
 
 ### Unsubscribe Links
 
-SendPortal allows automatic injection of unsubscribe links in your templates and campaigns. See the [Templates](/docs/templates) section for more information on how this works.
+SendPortal allows automatic injection of unsubscribe links in your templates and campaigns. See the [templates](/docs/templates) section for more information on how this works.
 
 When a user clicks on the unsubscribe link, they will be sent to a web page asking them to confirm that they want to be unsubscribed.
 
