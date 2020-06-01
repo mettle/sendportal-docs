@@ -5,7 +5,7 @@
 A campaign is a set of individual email messages that are sent to your [subscribers](/docs/features/subscribers). An example may be a new product launch or a regular newsletter.
 
 > Before creating a campaign, the following must already be configured:
-> - at least one [email service](/docs/email-services/email-services-introduction).
+> - at least one [email service](/docs/email-services/introduction).
 > - a list of [subscribers](/docs/features/subscribers) to target with your campaign.
 > - an [email template](/docs/features/templates) for your campaign (optional, but recommended).
 
@@ -51,7 +51,7 @@ Determines whether or not individual email clicks are tracked. If you wish to tr
 
 The body of your campaign email. This is what gets sent to your subscribers, so make it good!
 
-The content can include tags. To understand what tags are available to you, see the Tags section of the [Templates](/docs/templates) documentation.
+The content can include tags. To understand what tags are available to you, see the Tags section of the [Templates](/docs/features/templates) documentation.
 
 Once you have filled out the form, click _Save and Continue_. Your campaign will now be marked as a **Draft**.
 

@@ -30,7 +30,7 @@ Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz
 Accept: application/json
 ```
 
-#### Sample Response
+#### Sample Response
 
 ```json
 {

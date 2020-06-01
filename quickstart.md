@@ -1,5 +1,7 @@
 # Quickstart Guide
 
+## Introduction
+
 The following guide will walk you through sending out your first campaign. It assumes that you have:
 
 - successfully installed and configured SendPortal; and
@@ -10,7 +12,7 @@ For more detailed instructions for each feature, refer to the relevant article i
 
 ## Create An Email Service
 
-SendPortal integrates with [Mailgun](/docs/email-services/email-service-mailgun), [Amazon SES](/docs/email-services/email-service-ses), [Sendgrid](/docs/email-services/email-service-sendgrid) and [Postmark](/docs/email-services/email-service-postmark).
+SendPortal integrates with [Mailgun](/docs/email-services/mailgun), [Amazon SES](/docs/email-services/aws), [Sendgrid](/docs/email-services/sendgrid) and [Postmark](/docs/email-services/postmark).
 
 > As per their [Terms of Service](https://postmarkapp.com/terms-of-service#email-types-that-we-dont-allow-on-postmark), Postmark should only be used for transactional mail, and not for marketing messages.
 

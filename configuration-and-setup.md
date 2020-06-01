@@ -168,19 +168,19 @@ You first need to set `MAIL_MAILER` to your chosen service. The options here are
 When using a regular SMTP provider, or sendmail, you should set the following configuration values:
 
 - `MAIL_HOST` – This is the host for the SMTP server
-- `MAIL_PORT` – This is the port that will be used to connect to the SMTP server
+- `MAIL_PORT` – This is the port that will be used to connect to the SMTP server
 - `MAIL_USERNAME` – The username used to authenticate with the SMTP server
 - `MAIL_PASSWORD` – The password used to authenticate with the SMTP server
-- `MAIL_FROM_ADDRESS` – The address that mail will appear to come from
+- `MAIL_FROM_ADDRESS` – The address that mail will appear to come from
 - `MAIL_FROM_NAME` – The name that mail will appear to come from
 
 #### SES
 
 When using SES as your mail service, you should set the following configuration values, adding them to the `.env` file if they are not already present:
 
-- `AWS_ACCESS_KEY_ID` – Your AWS ID key
+- `AWS_ACCESS_KEY_ID` – Your AWS ID key
 - `AWS_SECRET_ACCESS_KEY` – Your AWS secret key
-- `AWS_DEFAULT_REGION` – Your AWS region (defaults to `us-east-1` if not included in the configuration file)
+- `AWS_DEFAULT_REGION` – Your AWS region (defaults to `us-east-1` if not included in the configuration file)
 
 #### Mailgun
 
@@ -188,7 +188,7 @@ When using Mailgun as your mail service, you should set the following configurat
 
 - `MAILGUN_DOMAIN`
 - `MAILGUN_SECRET`
-- `MAILGUN_ENDPOINT` – (defaults to `api.mailgun.net` if not included in the configuration file)
+- `MAILGUN_ENDPOINT` – (defaults to `api.mailgun.net` if not included in the configuration file)
 
 #### Postmark
 

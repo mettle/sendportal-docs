@@ -31,11 +31,11 @@ When sending a [campaign](/docs/features/campaigns), the campaign's content will
 
 As well as the required `content` tag, the following tags are available in templates:
 
-- `email` – The subscriber's email
-- `first_name` – The subscriber's first name (if set)
+- `email` – The subscriber's email
+- `first_name` – The subscriber's first name (if set)
 - `last_name` – The subscriber's last name (if set)
-- `unsubscribe_url` – A URL generated to allow the subscriber to unsubscribe
-- `webview_url` – A URL generated to allow the subscriber to view the message in a web view
+- `unsubscribe_url` – A URL generated to allow the subscriber to unsubscribe
+- `webview_url` – A URL generated to allow the subscriber to view the message in a web view
 
 Tags should be wrapped in pairs of double braces (`{{` & `}}`), e.g.:
 

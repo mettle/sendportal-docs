@@ -92,7 +92,7 @@ Segments can be chosen for subscribers by using the `Segments` selector. If you 
 
 ### API
 
-Refer to the [subscribers API documentation](/docs/api/api-subscribers) for information on how to manage subscribers through the API.
+Refer to the [subscribers API documentation](/docs/api/subscribers) for information on how to manage subscribers through the API.
 
 ## Exporting Subscribers
 
@@ -106,7 +106,7 @@ To manually unsubscribe a subscriber, you should go to the subscriber edit page,
 
 ### Unsubscribe Links
 
-SendPortal allows automatic injection of unsubscribe links in your templates and campaigns. See the [templates](/docs/templates) section for more information on how this works.
+SendPortal allows automatic injection of unsubscribe links in your templates and campaigns. See the [templates](/docs/features/templates) section for more information on how this works.
 
 When a user clicks on the unsubscribe link, they will be sent to a web page asking them to confirm that they want to be unsubscribed.
 
