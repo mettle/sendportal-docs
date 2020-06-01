@@ -4,6 +4,8 @@
 
 SendPortal comes packaged with a command-line setup utility that will get you up and running in no time. It will attempt to automatically configure SendPortal and create a default user account and workspace for administrative purposes.
 
+Alternatively, you can manually configure SendPortal by following the Manual Configuration section.
+
 ## Setup Command
 
 In the SendPortal installation's root directory, run the following command:
@@ -16,7 +18,12 @@ The command will prompt you for confirmation on most steps. If this is the first
 
 You can safely run the command multiple times if needed.
 
-Additionally, if you let the setup command create the `.env` configuration file, you will not be able to continue until you manually specify the database configuration settings in that file. As such, you will need to add your database configuration at this stage and then run the setup command again to continue. Database configuration instructions can be found in the Setting Up Database Connection section of Manual Configuration below.
+Additionally, if you let the setup command create the `.env` configuration file, you will not be able to continue until you manually specify the database configuration settings in that file. As such, you will need to add your database configuration at this stage and then run the setup command again to continue.
+
+Database configuration instructions can be found in the Setting Up Database Connection section of Manual Configuration below.
+
+### Next Steps
+Once the setup command has completed, you will need to move onto the Additional Configuration section in order to correctly configure how SendPortal dispatches your messages.
 
 ## Manual Configuration
 
@@ -78,9 +85,7 @@ php artisan vendor:publish --provider=Sendportal\\Base\\SendportalBaseServicePro
 
 If you do not use the setup command to create a workspace and user with which to administer SendPortal, you will need to go through the web interface registration process.
 
-For this to function, you need to enable registration by adding the `SENDPORTAL_REGISTER=true` parameter to your `.env` file and additional email configuration will be necessary. In particular, the User Management Email setup specified in the Additional Configuration section must be completed in order for registration to work.
-
-The same configuration above is necessary for the new user invitation process to be working.
+You must follow the User Management Email configuration specified in Additional Configuration in order to allow registration and user invitation in SendPortal.
 
 ## Additional Configuration
 
@@ -159,7 +164,7 @@ In order to use user management functionality (for example, inviting new users o
 
 > There is no relationship between SendPortal's internal mail configuration and any email services that are configured for a workspace.
 
-> Make sure the registration functionality is enabled by the `SENDPORTAL_REGISTER=true` parameter.
+> You will need to set `SENDPORTAL_REGISTER=true` in the `.env` file in order to use the registration and user invitation functionality.
 
 You first need to set `MAIL_MAILER` to your chosen service. The options here are `smtp`, `sendmail`, `ses`, `mailgun and postmark`.
 
