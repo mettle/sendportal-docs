@@ -7,7 +7,7 @@ To run SendPortal, your environment must meet a few minimum requirements:
 - PHP ≥ 7.2.5
 - Git
 - [Composer](https://getcomposer.org/)
-- MySQL or PostgreSQL
+- MySQL (≥ 5.7) or PostgreSQL (≥ 9.4)
 
 ## Installing SendPortal
 
