@@ -166,6 +166,8 @@ In order to use user management functionality (for example, inviting new users o
 
 > You will need to set `SENDPORTAL_REGISTER=true` in the `.env` file in order to use the registration and user invitation functionality.
 
+> By default, the ability for users to reset their password is enabled. If you wish to disable password resets, you must set `SENDPORTAL_PASSWORD_RESET=false` in the `.env` file.
+
 You first need to set `MAIL_MAILER` to your chosen service. The options here are `smtp`, `sendmail`, `ses`, `mailgun and postmark`.
 
 #### SMTP & Sendmail
