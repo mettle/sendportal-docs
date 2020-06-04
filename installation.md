@@ -16,7 +16,7 @@ To run SendPortal, your environment must meet a few minimum requirements:
 Clone the repository to your environment, using the following command:
 
 ```bash
-git clone https://github.com/sendportal/sendportal.git
+git clone https://github.com/mettle/sendportal.git
 ```
 
 ### Install Dependencies
