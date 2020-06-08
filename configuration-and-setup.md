@@ -168,7 +168,7 @@ In order to use user management functionality (for example, inviting new users o
 
 > By default, users are granted the ability to reset their passwords. If you wish to disable password resets, you must set `SENDPORTAL_PASSWORD_RESET=false` in the `.env` file.
 
-You first need to set `MAIL_MAILER` to your chosen service. The options here are `smtp`, `sendmail`, `ses`, `mailgun and postmark`.
+You first need to set `MAIL_MAILER` to your chosen service. The options here are `smtp`, `sendmail`, `ses`, `mailgun` and `postmark`.
 
 #### SMTP & Sendmail
 
