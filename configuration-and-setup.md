@@ -52,7 +52,7 @@ You will need to set the `APP_URL` variable in the `.env` file to the base URL f
 For example, if you are hosting your installation of SendPortal at `campaigns.example.com`, you will need to set the following:
 
 ```
-APP_URL=https:/campaigns.example.com
+APP_URL=https://campaigns.example.com
 ```
 
 This is necessary to allow SendPortal to correctly generate unsubscribe links, or links for user registration emails.
