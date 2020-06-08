@@ -41,4 +41,4 @@ server {
 }
 ```
 
-For more detailed information, see the [Laravel deployment documentation](https://laravel.com/docs/7.x/deployment).
+For more detailed information, see the [Laravel deployment documentation](https://laravel.com/docs/deployment).
