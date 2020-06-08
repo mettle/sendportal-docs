@@ -49,7 +49,7 @@ php artisan key:generate
 
 You will need to set the `APP_URL` variable in the `.env` file to the base URL for your installation of SendPortal.
 
-For example, if you were hosting your installation of SendPortal at `campaigns.example.com`, you will need to set the following:
+For example, if you are hosting your installation of SendPortal at `campaigns.example.com`, you will need to set the following:
 
 ```
 APP_URL=https:/campaigns.example.com
