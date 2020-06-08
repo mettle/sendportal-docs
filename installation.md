@@ -24,3 +24,21 @@ git clone https://github.com/mettle/sendportal.git
 Once cloned, navigate to the project's root directory and run `composer install` to install SendPortal and its dependencies.
 
 From here, you can move onto the [Configuration & Setup](/docs/getting-started/configuration-and-setup) step.
+
+### Webserver
+
+You will need to a webserver (for example, Apache or nginx), in order to host your SendPortal installation.
+
+When setting up your websever, it should be pointed to the `public` directory in order to correctly serve SendPortal.
+
+For example, in nginx:
+
+```
+server {
+    listen 80;
+    server_name campaigns.example.com;
+    root /var/www/campaigns.example.com/public;
+}
+```
+
+For more detailed information, see the [Laravel deployment documentation](https://laravel.com/docs/deployment).
