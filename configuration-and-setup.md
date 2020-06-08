@@ -47,15 +47,15 @@ php artisan key:generate
 
 ### Base URL
 
-You will need to set the `APP_URL` variable in the `.env` file to what represents the base URL for your installation of SendPortal.
+You will need to set the `APP_URL` variable in the `.env` file to the base URL for your installation of SendPortal.
 
-For example, if you were hosting your installation of SendPortal at `example-sendportal.com`, you will need to set the following:
+For example, if you were hosting your installation of SendPortal at `campaigns.example.com`, you will need to set the following:
 
 ```
-APP_URL=https://example-sendportal.com
+APP_URL=https:/campaigns.example.com
 ```
 
-This is necessary to allow SendPortal to correctly generate things such as unsubscribe links, or links for user registration emails.
+This is necessary to allow SendPortal to correctly generate unsubscribe links, or links for user registration emails.
 
 ### Database Connection
 
