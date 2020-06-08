@@ -27,7 +27,7 @@ From here, you can move onto the [Configuration & Setup](/docs/getting-started/c
 
 ### Webserver
 
-You will need to provide a webserver, like Apache or nginx, in order to serve SendPortal to browsers.
+You will need to a webserver (for example, Apache or nginx), in order to host your SendPortal installation.
 
 When setting up your websever, it should be pointed to the `public` directory in order to correctly serve SendPortal.
 
@@ -36,9 +36,9 @@ For example, in nginx:
 ```
 server {
     listen 80;
-    server_name example-sendportal.com;
-    root /var/www/example-sendportal.com/public;
+    server_name campaigns.example.com;
+    root /var/www/campaigns.example.com/public;
 }
 ```
 
-For more detailed information about how to consider setting up your webserver to server SendPortal, see the [Laravel deployment documentation](https://laravel.com/docs/7.x/deployment).
+For more detailed information, see the [Laravel deployment documentation](https://laravel.com/docs/7.x/deployment).
