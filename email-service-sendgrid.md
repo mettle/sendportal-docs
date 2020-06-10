@@ -30,6 +30,6 @@ You can also enable subscription tracking from this page. If enabled, SendGrid w
 
 To enable tracking within SendPortal you'll need to enable event notifications from _Settings_ > _Mail Settings_.
 
-The `HTTP POST URL` depends on your domain, but must end with `/api/webhooks/sendgrid`. For example, if SendPortal is installed at `https://campaigns.marketing.com`, then each webhook should point to `https://campaigns.marketing.com/api/webhooks/sendgrid`.
+The `HTTP POST URL` depends on your domain, but must end with `/api/v1/webhooks/sendgrid`. For example, if SendPortal is installed at `https://campaigns.marketing.com`, then each webhook should point to `https://campaigns.marketing.com/api/v1/webhooks/sendgrid`.
 
 That's it! You're now setup to send and track e-mails using SendGrid.

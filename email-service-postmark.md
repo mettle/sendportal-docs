@@ -36,7 +36,7 @@ Select the _Webhooks_ tab and click _Add webhook_.
 
 ![/img/docs/providers/postmark/postmark-8.png](/img/docs/providers/postmark/postmark-8.png)
 
-The `Webhook URL` depends on your domain, but must end with `/api/webhooks/postmark`. For example, if SendPortal is installed at `https://campaigns.marketing.com`, then each webhook should point to `https://campaigns.marketing.com/api/webhooks/postmark`.
+The `Webhook URL` depends on your domain, but must end with `/api/v1/webhooks/postmark`. For example, if SendPortal is installed at `https://campaigns.marketing.com`, then each webhook should point to `https://campaigns.marketing.com/api/v1/webhooks/postmark`.
 
 ![/img/docs/providers/postmark/postmark-9.png](/img/docs/providers/postmark/postmark-9.png)
 
