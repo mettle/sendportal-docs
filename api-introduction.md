@@ -57,7 +57,7 @@ The limit can be configured by editing the `SENDPORTAL_THROTTLE_MIDDLEWARE` key 
 For example, this would limit the API to 1000 requests every 5 minutes:
 
 ```markdown
-SENDPORTAL_THROTTLE_MIDDLEWARE=1000:5
+SENDPORTAL_THROTTLE_MIDDLEWARE=1000,5
 ```
 
 For more information on rate limiting see the official Laravel documentation [here](https://laravel.com/docs/master/routing#rate-limiting).
