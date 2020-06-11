@@ -6,11 +6,11 @@ To send e-mails using the Twilio Sendgrid provider, you will need a Sendgrid acc
 
 Once registered, open the `Setup Guide`, choose the `Web API` integration and select the PHP language option.
 
-![/img/docs/providers/sendgrid/sendgrid-1.png](/img/docs/providers/sendgrid/sendgrid-1.png)
+![https://sendportal.io/img/docs/providers/sendgrid/sendgrid-1.png](https://sendportal.io/img/docs/providers/sendgrid/sendgrid-1.png)
 
 Generate an API key and copy it to your SendPortal configuration.
 
-![/img/docs/providers/sendgrid/sendgrid-2.png](/img/docs/providers/sendgrid/sendgrid-2.png)
+![https://sendportal.io/img/docs/providers/sendgrid/sendgrid-2.png](https://sendportal.io/img/docs/providers/sendgrid/sendgrid-2.png)
 
 Check the `I've integrated the code above` box and click Next.
 
@@ -18,15 +18,15 @@ Send a test e-mail from SendPortal and if it works successfully click _Verify in
 
 ## Tracking
 
-![/img/docs/providers/sendgrid/sendgrid-3.png](/img/docs/providers/sendgrid/sendgrid-3.png)
+![https://sendportal.io/img/docs/providers/sendgrid/sendgrid-3.png](https://sendportal.io/img/docs/providers/sendgrid/sendgrid-3.png)
 
 Open and click tracking is enabled by default in SendGrid, but if you'd like to check the settings you'll find them under _Settings_ > _Tracking_.
 
-![/img/docs/providers/sendgrid/sendgrid-4.png](/img/docs/providers/sendgrid/sendgrid-4.png)
+![https://sendportal.io/img/docs/providers/sendgrid/sendgrid-4.png](https://sendportal.io/img/docs/providers/sendgrid/sendgrid-4.png)
 
 You can also enable subscription tracking from this page. If enabled, SendGrid will automatically add unsubscribe links to the bottom of every e-mail you send.
 
-![/img/docs/providers/sendgrid/sendgrid-5.png](/img/docs/providers/sendgrid/sendgrid-5.png)
+![https://sendportal.io/img/docs/providers/sendgrid/sendgrid-5.png](https://sendportal.io/img/docs/providers/sendgrid/sendgrid-5.png)
 
 To enable tracking within SendPortal you'll need to enable event notifications from _Settings_ > _Mail Settings_.
 
