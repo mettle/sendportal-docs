@@ -93,6 +93,11 @@ Run the following command to publish the config, views, languages and assets fro
 php artisan vendor:publish --provider=Sendportal\\Base\\SendportalBaseServiceProvider
 ```
 
+You should also publish the Laravel Horizon assets:
+```bash
+php artisan horizon:publish
+```
+
 ### Workspaces & Users
 
 If you do not use the setup command to create a workspace and user with which to administer SendPortal, you will need to go through the web interface registration process.
