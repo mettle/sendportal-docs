@@ -93,11 +93,6 @@ Run the following command to publish the config, views, languages and assets fro
 php artisan vendor:publish --provider=Sendportal\\Base\\SendportalBaseServiceProvider
 ```
 
-You should also publish the Laravel Horizon assets:
-```bash
-php artisan horizon:publish
-```
-
 ### Workspaces & Users
 
 If you do not use the setup command to create a workspace and user with which to administer SendPortal, you will need to go through the web interface registration process.
@@ -161,7 +156,13 @@ You will of course need an installation of redis on your server. You will then n
 
 SendPortal bundles [Laravel Horizon](https://laravel.com/docs/7.x/horizon) as an easy way to run and manage redis queues.
 
-Configuration for the queues necessary to run SendPortal is already included. In order to use Horizon as your queue manager you simply need to run the following command:
+Configuration for the queues necessary to run SendPortal is already included. In order to use Horizon as your queue manager, you should first publish the Horizon assets:
+
+```
+php artisan horizon:publish
+```
+
+To start processing your queue items with Horizon, you simply need to run the following command:
 
 ```
 php artisan horizon
