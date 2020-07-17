@@ -28,3 +28,18 @@ Segments are very simple and only require a `Name`, which must be unique across 
 ### API
 
 Refer to the [Segments API Documentation](/docs/api/segments) for information on how to manage segments through the API.
+
+## Deleting Segments
+
+Segments can be deleted in the following ways:
+
+- through the application interface
+- via the API
+
+### Application Interface
+
+To delete a segment through the application interface, navigate to the segments index page. Once there, find your target segment in the listing and click the _Delete_ button.
+
+### API
+
+Refer to the [Segments API Documentation](/docs/api/segments) for information on how to delete segments through the API.
