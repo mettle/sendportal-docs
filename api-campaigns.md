@@ -335,7 +335,7 @@ None
 #### Sample Request
 
 ```
-PUT /api/v1/workspaces/1/campaigns/2/send HTTP/1.1
+POST /api/v1/workspaces/1/campaigns/2/send HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
 Accept: application/json
