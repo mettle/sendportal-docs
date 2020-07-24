@@ -219,17 +219,17 @@ Accept: application/json
 Content-Type: application/json
 
 {
-	"subject": "My New Campaign",
-	"subject": "My New Campaign Subject",
-	"content": "My New Email Content"
-	"template_id": "1"
-	"email_service_id": "1"
-	"from_name": "SendPortal"
-	"from_email": "test@sendportal.io"
-	"is_open_tracking": "1"
-	"is_click_tracking": "1"
-	"send_to_all": "1"
-	"save_as_draft": "0"
+    "subject": "My New Campaign",
+    "subject": "My New Campaign Subject",
+    "content": "My New Email Content"
+    "template_id": "1"
+    "email_service_id": "1"
+    "from_name": "SendPortal"
+    "from_email": "test@sendportal.io"
+    "is_open_tracking": "1"
+    "is_click_tracking": "1"
+    "send_to_all": "1"
+    "save_as_draft": "0"
     "scheduled_at": "2020-07-24 08:46:54
 }
 ```
