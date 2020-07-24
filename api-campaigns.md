@@ -1,7 +1,6 @@
 # Campaigns
 
 ## Campaign Object
-### Fields
 - data: `object`
     - id: `int` (readonly)
     - name: `string`
@@ -23,32 +22,6 @@
     - scheduled_at: `datetime`
     - created_at: `datetime` (readonly)
     - updated_at: `datetime` (readonly)
-
-### Sample Response
-```json
-{
-    "id": 1,
-    "name": "name",
-    "subject": "My Campaign Subject",
-    "content": "My Email Content",
-    "status_id": 1,
-    "template_id": 1,
-    "email_service_id": 1,
-    "from_name": "SendPortal",
-    "from_email": "test@sendportal.io",
-    "is_open_tracking": true,
-    "is_click_tracking": true,
-    "sent_count": 0,
-    "open_count": 0,
-    "click_count": 0,
-    "send_to_all": true,
-    "segments": [],
-    "save_as_draft": false,
-    "scheduled_at": "2020-07-24 08:46:54",
-    "created_at": "2020-07-24 08:23:38",
-    "updated_at": "2020-07-24 09:43:42"
-}
-```
 
 ## Index
 
