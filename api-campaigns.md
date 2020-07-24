@@ -252,9 +252,21 @@ Update a campaign.
 #### Request Fields
 
 - name: `string`
+- subject: `string`
+- content: `string`
+- template_id: `int`
+- email_service_id: `int`
+- from_name: `string`
+- from_email: `string`
+- is_open_tracking: `bool` (optional)
+- is_click_tracking: `bool` (optional)
+- send_to_all: `bool` (optional)
+- segments: `array<int>` (optional)
+- save_as_draft: `bool` (optional)
 
 #### Response Fields
 
+`Campaign Object`
 
 #### Sample Request
 
