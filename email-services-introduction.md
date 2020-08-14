@@ -15,7 +15,7 @@ SendPortal currently integrates with the following five email service providers:
 
 ## Testing
 
-You can test if an Email Service has been configured correctly by clicking on the `Test` button in the page that lists all your Email Services.  
+You can test if an Email Service has been correctly configured by clicking on the `Test` button in the page that lists all of your Email Services.  
 
 ![/img/docs/providers/testing.png](/img/docs/providers/testing.png)
 
