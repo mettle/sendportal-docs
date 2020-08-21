@@ -62,6 +62,14 @@ SENDPORTAL_THROTTLE_MIDDLEWARE=1000,5
 
 For more information on rate limiting see the official Laravel documentation [here](https://laravel.com/docs/master/routing#rate-limiting).
 
+## Testing the API
+
+You can easily and quickly test your API by performing a `GET` request against the `/ping` endpoint:
+
+`GET /api/v1/ping`
+
+If your API is working correctly, then this will return a `200` response with the string `ok` in the body content. Note that this endpoint does not require any authentication.
+
 ## Errors
 
 ### Authentication Error
