@@ -64,7 +64,7 @@ For more information on rate limiting see the official Laravel documentation [he
 
 ## Testing the API
 
-You can easily and quickly test your API by performing a `GET` request against the `/ping` endpoint:
+You can easily test your API by performing a `GET` request against the `/ping` endpoint:
 
 `GET /api/v1/ping`
 
