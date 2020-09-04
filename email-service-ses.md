@@ -88,7 +88,7 @@ Begin by creating a topic. Select _Topics_ from the menu and click _Create topic
 
 We also need to create a subscription to go along with our topic. For the Topic ARN, select the topic that you just created and select `HTTPS` as the protocol. The `Endpoint` will depend on your domain, but must end with `/api/v1/webhooks/aws`. For example, if SendPortal is installed at `https://campaigns.marketing.com`, then each webhook should point to `https://campaigns.marketing.com/api/v1/webhooks/aws`.
 
-Make sure you don't enable raw message delivery, otherwise the webhooks won't be handled correctly.
+Do _not_ enable `raw message delivery`, otherwise the webhooks will not be handled correctly.
 
 ![/img/docs/providers/aws/aws-17.png](/img/docs/providers/aws/aws-17.png)
 
