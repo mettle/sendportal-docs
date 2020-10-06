@@ -25,6 +25,14 @@ Database configuration instructions can be found in the Setting Up Database Conn
 ### Next Steps
 Once the setup command has completed, you will need to move onto the Additional Configuration section in order to correctly configure how SendPortal dispatches your messages.
 
+## Setup GUI
+
+Alternatively you can use a nice Graphical User Interface to install SendPortal. If you are hosting your installation of SendPortal at `campaigns.example.com`, just point your browser to `campaigns.example.com/setup` to launch the application setup process.
+
+ > Keep in mind that in order to launch the setup you have to have the `.env` file already present in your root folder, and the encryption key should be set. See the <a href="#manual-configuration">Manual Configuration</a> section below for more information.
+
+The setup process will guide you through multiple steps that will check that the necessary requirements of SendPortal are met. 
+
 ## Manual Configuration
 
 ### Creating Configuration File
