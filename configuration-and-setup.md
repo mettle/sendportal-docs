@@ -10,7 +10,7 @@ Alternatively, you can manually configure SendPortal by using a Setup Wizard, or
 - [Setup Wizard](#setup-wizard)
 - [Manual Configuration](#manual-configuration)
 
-Once you have successfully setup SendPortal, you must also follow the [Additional Configuration](additional-configuration) instructions below. 
+Once you have successfully setup SendPortal, you must also follow the [Additional Configuration](#additional-configuration) instructions below. 
 
 ## Setup Command
 
