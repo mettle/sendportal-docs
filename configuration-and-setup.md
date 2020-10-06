@@ -36,6 +36,8 @@ Once the setup command has completed, you will need to move onto the Additional 
 You can also use a Setup Wizard to guide you through the installation process. If you are hosting SendPortal at `campaigns.example.com`, just point your browser to `campaigns.example.com/setup` to launch the setup process.
 
  > In order to launch the Setup Wizard the `.env` file must already be present in the root folder of your installation, and the encryption key must be set. See the <a href="#manual-configuration">Manual Configuration</a> section below for more information. The Setup Wizard will not be able to run until these steps have taken place.
+ 
+ > Once your first user has been created, the Setup Wizard will no longer be available. For security reasons, we recommend running the Setup Wizard as soon as possible after installation. 
 
 ## Manual Configuration
 
