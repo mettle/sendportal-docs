@@ -2,15 +2,17 @@
 
 ## Introduction
 
-SendPortal comes packaged with a command-line setup utility that will get you up and running in no time. It will attempt to automatically configure SendPortal and create a default user account and workspace for administrative purposes.
+SendPortal comes packaged with a command-line setup utility that will get you up and running in a few minutes. It will attempt to automatically configure SendPortal and create a default user account and workspace for administrative purposes.
 
-Alternatively, you can manually configure SendPortal by using a Setup Wizard, or by following the Manual Configuration section below.
+Alternatively, you can configure SendPortal by using the Setup Wizard, or by following the Manual Configuration section below.
 
 - [Setup Command](#setup-command) (Recommended)
 - [Setup Wizard](#setup-wizard)
 - [Manual Configuration](#manual-configuration)
 
 Once you have successfully setup SendPortal, you must also follow the [Additional Configuration](#additional-configuration) instructions below. 
+
+> For security reasons, we recommend setting up SendPortal as soon as possible after installation.
 
 ## Setup Command
 
@@ -24,20 +26,17 @@ The command will prompt you for confirmation on most steps. If this is the first
 
 You can safely run the command multiple times if needed.
 
-Additionally, if you let the setup command create the `.env` configuration file, you will not be able to continue until you manually specify the database configuration settings in that file. As such, you will need to add your database configuration at this stage and then run the setup command again to continue.
-
-Database configuration instructions can be found in the Setting Up Database Connection section of Manual Configuration below.
-
-### Next Steps
-Once the setup command has completed, you will need to move onto the Additional Configuration section in order to correctly configure how SendPortal dispatches your messages.
+Once the setup command has completed, you will need to move onto the [Additional Configuration](#additional-configuration) section in order to correctly configure how SendPortal dispatches your messages.
 
 ## Setup Wizard
 
 You can also use a Setup Wizard to guide you through the installation process. If you are hosting SendPortal at `campaigns.example.com`, just point your browser to `campaigns.example.com/setup` to launch the setup process.
 
- > In order to launch the Setup Wizard the `.env` file must already be present in the root folder of your installation, and the encryption key must be set. See the <a href="#manual-configuration">Manual Configuration</a> section below for more information. The Setup Wizard will not be able to run until these steps have taken place.
+ > In order to launch the Setup Wizard the `.env` file must already be present in the root folder of your installation, and the encryption key must be set. See the <a href="#manual-configuration">Manual Configuration</a> section below for more information.
  
- > Once your first user has been created, the Setup Wizard will no longer be available. For security reasons, we recommend running the Setup Wizard as soon as possible after installation. 
+ > Once your first user has been created, the Setup Wizard will no longer be available.
+
+Once the Setup Wizard has completed, you will need to move onto the [Additional Configuration](#additional-configuration) section in order to correctly configure how SendPortal dispatches your messages.
 
 ## Manual Configuration
 
