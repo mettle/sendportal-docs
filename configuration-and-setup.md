@@ -4,7 +4,13 @@
 
 SendPortal comes packaged with a command-line setup utility that will get you up and running in no time. It will attempt to automatically configure SendPortal and create a default user account and workspace for administrative purposes.
 
-Alternatively, you can manually configure SendPortal by following the Manual Configuration section.
+Alternatively, you can manually configure SendPortal by using a Setup Wizard, or by following the Manual Configuration section below.
+
+- [Setup Command](#setup-command) (Recommended)
+- [Setup Wizard](#setup-wizard)
+- [Manual Configuration](#manual-configuration)
+
+Once you have successfully setup SendPortal, you must also follow the [Additional Configuration](additional-configuration) instructions below. 
 
 ## Setup Command
 
@@ -25,13 +31,21 @@ Database configuration instructions can be found in the Setting Up Database Conn
 ### Next Steps
 Once the setup command has completed, you will need to move onto the Additional Configuration section in order to correctly configure how SendPortal dispatches your messages.
 
+## Setup Wizard
+
+You can also use a Setup Wizard to guide you through the installation process. If you are hosting SendPortal at `campaigns.example.com`, just point your browser to `campaigns.example.com/setup` to launch the setup process.
+
+ > In order to launch the Setup Wizard the `.env` file must already be present in the root folder of your installation, and the encryption key must be set. See the <a href="#manual-configuration">Manual Configuration</a> section below for more information. The Setup Wizard will not be able to run until these steps have taken place.
+ 
+ > Once your first user has been created, the Setup Wizard will no longer be available. For security reasons, we recommend running the Setup Wizard as soon as possible after installation. 
+
 ## Manual Configuration
 
 ### Creating Configuration File
 
 SendPortal's configuration is handled through the`.env` file. By default, this file does not exist. To create it manually, you will need to clone the included `.env.example`, rename it to `.env` and make changes as necessary.
 
-> Any keys that are set in the `.env` file will be used, even if they are blank. If you do not wish to actively set a key (e.g. known defaults are what you want), you should remove it from your `.env` file, rather than leave it blank.
+> Any keys that are set in the `.env` file will be used, even if they are blank. If you do not wish to actively set a key, you should remove it from your `.env` file, rather than leave it blank.
 
 ### Key Generation
 
@@ -43,7 +57,7 @@ To generate a new key, you should run the following command:
 php artisan key:generate
 ```
 
-> Key generation can be run again, overwriting the previously set key. Doing so will invalidate any sessions or make any stored encrypted data inaccessible. You should not generate a new key unless absolutely necessary.
+> Although key generation can be run again, this will invalidate any sessions or make any stored encrypted data inaccessible. You should not generate a new key unless absolutely necessary.
 
 ### Base URL
 
