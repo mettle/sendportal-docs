@@ -20,6 +20,7 @@ Retrieve a paginated list of all subscribers.
     - first_name: `string`
     - last_name: `string`
     - email: `string`
+    - unsubscribed_at: `datetime`
     - created_at: `datetime`
     - updated_at: `datetime`
 
@@ -42,6 +43,7 @@ Accept: application/json
             "first_name": "Test",
             "last_name": "Subscriber",
             "email": "testsubscriber@example.com",
+            "unsubscribed_at": null,
             "created_at": "2020-03-23 13:44:09",
             "updated_at": "2020-03-23 13:44:09"
         },
@@ -50,6 +52,7 @@ Accept: application/json
             "first_name": "Test",
             "last_name": "Subscriber Two",
             "email": "testsubscriber2@example.com",
+            "unsubscribed_at": "2020-08-02 08:07:08",
             "created_at": "2020-03-23 13:50:39",
             "updated_at": "2020-03-23 13:50:39"
         }
@@ -97,6 +100,7 @@ Retrieve the details of a single subscriber, including the segments.
         - string: `string`
         - created_at: `datetime`
         - updated_at: `datetime`
+    - unsubscribed_at: `datetime`
     - created_at: `datetime`
     - updated_at: `datetime`
 
@@ -126,6 +130,7 @@ Accept: application/json
                 "update_at": "2020-03-23 12:44:14"
             }
         ],
+        "unsubscribed_at": null,
         "created_at": "2020-03-23 13:44:09",
         "updated_at": "2020-03-23 13:44:09"
     }
@@ -150,6 +155,7 @@ Create a new subscriber, optionally including segments the subscriber should be 
 - first_name: `string` (optional)
 - last_name: `string` (optional)
 - email: `string`
+- unsubscribed_at: `datetime` (optional)
 - segments: `array<int>` (optional)
 
 #### Response Fields
@@ -164,6 +170,7 @@ Create a new subscriber, optionally including segments the subscriber should be 
         - name: `int`
         - created_at: `datetime`
         - updated_at: `datetime`
+    - unsubscribed_at: `datetime`
     - created_at: `datetime`
     - updated_at: `datetime`
 
@@ -201,6 +208,7 @@ Content-Type: application/json
                 "update_at": "2020-03-23 12:44:14"
             }
         ],
+        "unsubscribed_at": null,
         "created_at": "2020-03-24 10:43:08",
         "updated_at": "2020-03-24 10:43:08"
     }
@@ -224,6 +232,7 @@ Update the details of the given subscriber.
 - first_name: `string` (optional)
 - last_name: `string` (optional)
 - email: `string`
+- unsubscribed_at: `datetime` (optional)
 
 #### Response Fields
 
@@ -232,6 +241,7 @@ Update the details of the given subscriber.
     - first_name: `string`
     - last_name: `string`
     - email: `string`
+    - unsubscribed_at: `datetime`
     - created_at: `datetime`
     - updated_at: `datetime`
 
@@ -261,6 +271,7 @@ Content-Type: application/json
         "first_name": "Test",
         "last_name": "Subscriber Two Updated",
         "email": "testsubscriber2@example.com",
+        "unsubscribed_at": null,
         "created_at": "2020-03-24 10:43:08",
         "updated_at": "2020-03-24 10:50:20"
     }
