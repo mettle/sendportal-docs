@@ -134,7 +134,13 @@ Accept: application/json
 
 ## Store
 
-Create a new subscriber, optionally including segments the subscriber should be included in.
+Create a new subscriber, optionally including segments the subscriber should be included in; or update an existing subscriber based on their email address, optionally including the segments the subscriber should be included in.
+
+This endpoint is overloaded to allow for updating existing subscribers keyed to their email address. This allows for a workflow where the caller of the API does not need to know whether or not the subscriber is already created and therefore choose the store or update endpoints separately. This also allows for subscribers to be updated without knowing their internal SendPortal ID.
+
+The rules for creating new subscribers or updating existing subscribers are as follows:
+- If the email address is not currently used for a subscriber in the workspace, then a new subscriber will be created using the email address, name and segments provided
+- If the email address is currently used by a subscriber in the workspace, then that subscriber will be updated using the name and segments provided
 
 ### Usage
 
@@ -143,7 +149,9 @@ Create a new subscriber, optionally including segments the subscriber should be 
 `POST /api/v1/workspaces/{workspaceId}/subscribers`
 
 #### Expected Response Code
-201
+201 - On store
+
+200 - On update
 
 #### Request Fields
 
