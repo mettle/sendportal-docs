@@ -173,8 +173,8 @@ If you don't want to use Horizon to manage you redis queue or you're using the d
 - `sendportal-webhook-process`: processes incoming webhooks
 
 ```
-php artisan queue:work --queue=endportal-message-dispatch
-php artisan queue:work --queue=endportal-webhook-process
+php artisan queue:work --queue=sendportal-message-dispatch
+php artisan queue:work --queue=sendportal-webhook-process
 ```
 
 ### Running Redis Queues With Laravel Horizon
