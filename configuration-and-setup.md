@@ -10,7 +10,7 @@ Alternatively, you can configure SendPortal by using the Setup Wizard, or by fol
 - [Setup Wizard](#setup-wizard)
 - [Manual Configuration](#manual-configuration)
 
-Once you have successfully setup SendPortal, you must also follow the [Additional Configuration](#additional-configuration) instructions below. 
+Once you have successfully setup SendPortal, you must also follow the [Additional Configuration](#additional-configuration) instructions below.
 
 > For security reasons, we recommend setting up SendPortal as soon as possible after installation.
 
@@ -33,7 +33,7 @@ Once the setup command has completed, you will need to move onto the [Additional
 You can also use a Setup Wizard to guide you through the installation process. If you are hosting SendPortal at `campaigns.example.com`, just point your browser to `campaigns.example.com/setup` to launch the setup process.
 
  > In order to launch the Setup Wizard the `.env` file must already be present in the root folder of your installation, and the encryption key must be set. See the <a href="#manual-configuration">Manual Configuration</a> section below for more information.
- 
+
  > Once your first user has been created, the Setup Wizard will no longer be available.
 
 Once the Setup Wizard has completed, you will need to move onto the [Additional Configuration](#additional-configuration) section in order to correctly configure how SendPortal dispatches your messages.
@@ -128,7 +128,7 @@ Please refer to the Laravel documentation on [Task Scheduling](https://laravel.c
 
 SendPortal sends email messages using a queue system. The queue can be processed synchronously or asynchronously. Asynchronous queues can be handled via your primary database or via redis.
 
-You can specify which queue to use in the `QUEUE_CONNECTION` parameter in the `.env` file. This should be set to one of `sync`, `database` or `redis`, depending on your requirements. This configuration applies to all messages sent in SendPortal and cannot be changed on a per-user, per-workspace or per-provider basis.
+You can specify which queue driver to use in the `QUEUE_CONNECTION` parameter in the `.env` file. This should be set to one of `sync`, `database` or `redis`, depending on your requirements. This configuration applies to all messages sent in SendPortal and cannot be changed on a per-user, per-workspace or per-provider basis.
 
 #### Sync
 
@@ -164,6 +164,18 @@ You will of course need an installation of redis on your server. You will then n
 - `REDIS_HOST`
 - `REDIS_PASSWORD`
 - `REDIS_PORT`
+
+### Running the queue without Laravel Horizon
+
+If you don't want to use Horizon to manage you redis queue or you're using the database driver you will have to run a [queue worker](https://laravel.com/docs/7.x/queues#running-the-queue-worker) for each queue that Sendportal uses.
+
+- `sendportal-message-dispatch`: dispatches messages to the email service
+- `sendportal-webhook-process`: processes incoming webhooks
+
+```
+php artisan queue:work --queue=sendportal-message-dispatch
+php artisan queue:work --queue=sendportal-webhook-process
+```
 
 ### Running Redis Queues With Laravel Horizon
 
