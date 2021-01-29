@@ -119,7 +119,7 @@ Content-Type: application/json
 
 Replace all subscribers assigned a given tag with the list provided in the request.
 
-If you want to assign a tag to additional subscriber without removing existing ones, you should use the Store endpoint. If you want to remove the tag from specific subscribers, you should use the Delete endpoint.
+If you want to assign a tag to additional subscribers without removing existing ones, you should use the Store endpoint. If you want to remove the tag from specific subscribers, you should use the Delete endpoint.
 
 #### Endpoint
 

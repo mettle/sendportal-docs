@@ -139,7 +139,7 @@ Accept: application/json
 
 ## Store
 
-Create a new subscriber, optionally including tags the subscriber should be included in.
+Create a new subscriber, optionally including tags the subscriber have assigned to them.
 
 ### Usage
 

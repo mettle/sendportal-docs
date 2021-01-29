@@ -2,7 +2,7 @@
 
 ## Overview
 
-Subscribers represent individuals that are available to you when sending out campaigns. Subscribers can optionally belong to one or more [tags](/docs/features/tags).
+Subscribers represent individuals that are available to you when sending out campaigns. Subscribers can optionally be assigned one or more [tags](/docs/features/tags).
 
 > The email address for each Subscriber must be unique in each [workspace](/docs/features/workspaces).
 

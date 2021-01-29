@@ -4,7 +4,7 @@
 
 Tags offer a convenient means of grouping subscribers together. For example, you may have one tag for your monthly newsletter and another for customers that want to be notified of a new product launch.
 
-Tags are completely optional; a subscriber can belong to one tag, multiple tags, or none at all.
+Tags are completely optional; a subscriber can be assigned one tag, multiple tags, or none at all.
 
 ## View Tags
 
