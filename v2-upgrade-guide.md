@@ -1,40 +1,40 @@
 # SendPortal v1 To v2 Upgrade Guide
 
 ## Requirements
-Before upgrading to SendPortal v2, you must make sure you have completed all possible upgrades of SendPortal v1. If this isn't done, you may encounter issues with the upgrade process.
+Before upgrading to SendPortal v2, you __must__ make sure you have the latest version of SendPortal v1, __with all migrations run__. If this isn't done, you _will_ encounter issues with the upgrade process.
 
-## Upgrading
-
-### Getting The Latest Version
+## Getting The Latest Version
 Get the latest version of SendPortal by performing a git pull from GitHub:
 
 ```
-# cd sendportal-install-directory
-# git pull
+cd sendportal-install-directory
+git pull
 ```
 
-### Applying The Changes
-Once the new version is downloaded, you will need to apply the new changes, which you can do with a Composer update:
+## Applying The Changes
+Once the new version is downloaded, you will need to tell SendPortal about the new code. This is done by using the following command:
 
 ```
 composer update
 ```
 
-### Apply Migrations
-The new version of SendPortal prefixes its core database tables with `sendportal_`. To ensure that SendPortal continues to work, you will need to run migrations so this change can be made to your existing database:
+## Performing The Upgrade
+Once you have the new version of SendPortal on your system, you will need to perform an upgrade to ensure your installation works correctly.
+
+### Automatic Upgrade
+SendPortal includes an upgrade command that performs the necessary upgrade steps for you, similar to the initial setup command. To use it, run the following:
 
 ```
-php artisan migrate
+php artisan sp:upgrade
 ```
 
-### Republish Assets
-SendPortal v2 makes changes to various views, routes, etc. To ensure these are available, you need to republish SendPortal's assets:
+### Manual Upgrade
+If you prefer to perform the upgrade steps manually, you will need to do the following:
 
-```
-php artisan vendor:publish --provider='Sendportal\Base\SendportalBaseServiceProvider' --force
-```
+- Apply migrations with `php artisan migrate`
+- Republish assets with `php artisan vendor:publish --provider='Sendportal\Base\SendportalBaseServiceProvider' --force`
 
-### Laravel Horizon
+## Laravel Horizon
 If you are using Laravel Horizon to manage redis queues, you will need to republish its assets for it to continue working with the new version of SendPortal:
 
 ```
@@ -42,3 +42,6 @@ php artisan horizon:publish
 ```
 
 > For more information about Horizon, see _Running Redis Queues With Laravel Horizon_ in [Configuration & Setup](/docs/getting-started/configuration-and-setup).
+
+## Complete
+If all of these steps complete successfully, you will now have SendPortal v2 installed.
