@@ -2,7 +2,7 @@
 
 ## Overview
 
-Subscribers represent individuals that are available to you when sending out campaigns. Subscribers can optionally belong to one or more [segments](/docs/features/segments).
+Subscribers represent individuals that are available to you when sending out campaigns. Subscribers can optionally belong to one or more [tags](/docs/features/tags).
 
 > The email address for each Subscriber must be unique in each [workspace](/docs/features/workspaces).
 
@@ -29,7 +29,7 @@ To view an individual subscriber, head to the subscribers index page and click o
 
 Each subscriber's email, first name, last name and subscription status is displayed when viewing an individual subscriber.
 
-In addition, if the subscriber is in any [segments](/docs/segments) then these are also displayed.
+In addition, if the subscriber has been assigned any [tags](/docs/tags) then these are also displayed.
 
 ### Messages
 
@@ -59,7 +59,7 @@ The following information can be saved for each Subscriber:
 - first name (optional)
 - last name (optional)
 - subscription status
-- segments (optional)
+- tags (optional)
 
 ### CSV Imports
 
@@ -86,9 +86,9 @@ Each row after the header row must represent a single subscriber. Optional field
 
 To upload the file, click the _Browse_ button on the file selector, and choose the file you wish to upload. When you have selected your file, you can click the _Upload_ button to begin the upload process.
 
-#### Segments
+#### Tags
 
-Segments can be chosen for subscribers by using the `Segments` selector. If you have any segments available, you can pick which ones to use here. Note that the chosen segments will apply to all subscribers uploaded in the chosen CSV. It is currently not possible to specify separate segments for each individual subscriber.
+Tags can be assigned to subscribers by using the `Tags` selector. If you have any tags available, you can pick which ones to assign here. Note that the chosen tags will apply to all subscribers uploaded in the chosen CSV. It is currently not possible to specify separate tags for each individual subscriber.
 
 ### API
 

@@ -1,14 +1,14 @@
-# Subscriber Segments
+# Subscriber Tags
 
 ## Index
 
-Retrieve a list of the segments a subscriber is in.
+Retrieve a list of tags that have been assigned to the given subscriber.
 
 ### Usage
 
 #### Endpoint
 
-`GET /api/v1/workspaces/{workspaceId}/subscribers/{subscriberId}/segments`
+`GET /api/v1/workspaces/{workspaceId}/subscribers/{subscriberId}/tags`
 
 #### Expected Response Code
 200
@@ -24,7 +24,7 @@ Retrieve a list of the segments a subscriber is in.
 #### Sample Request
 
 ```
-GET /api/v1/workspaces/1/subscribers/1/segments HTTP/1.1
+GET /api/v1/workspaces/1/subscribers/1/tags HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
 Accept: application/json
@@ -37,7 +37,7 @@ Accept: application/json
     "data": [
         {
             "id": 1,
-            "name": "Test Segment",
+            "name": "Test Tag",
             "created_at": "2020-03-23 12:44:14",
             "update_at": "2020-03-23 12:44:14"
         }
@@ -47,20 +47,20 @@ Accept: application/json
 
 ## Store
 
-Adds a list of segments to the given subscriber. Returns a list of the segments that the subscriber is in.
+Assigns a list of tags to the given subscriber. Returns a list of tags that have been assigned to the subscriber.
 
-This endpoint is idempotent, meaning that segments already added to the subscriber will not be continuously added on repeated requests to this endpoint. However, if the intention is to supply a full list of segments that the subscriber should be in, the Update endpoint should be used instead.
+This endpoint is idempotent, meaning that tags already assigned to the subscriber will not be continuously added on repeated requests to this endpoint. However, if the intention is to supply a full list of tags that should be assigned to the given subscriber, the Update endpoint should be used instead.
 
 #### Endpoint
 
-`POST /api/v1/workspaces/{workspaceId}/subscribers/{subscriberId}/segments`
+`POST /api/v1/workspaces/{workspaceId}/subscribers/{subscriberId}/tags`
 
 #### Expected Response Code
 200
 
 #### Request Fields
 
-- segments: `array<int>`
+- tags: `array<int>`
 
 #### Response Fields
 
@@ -73,14 +73,14 @@ This endpoint is idempotent, meaning that segments already added to the subscrib
 #### Sample Request
 
 ```
-POST /api/v1/workspaces/1/subscribers/1/segments HTTP/1.1
+POST /api/v1/workspaces/1/subscribers/1/tags HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
 Accept: application/json
 Content-Type: application/json
 
 {
-	"segments": [1, 2]
+	"tags": [1, 2]
 }
 ```
 
@@ -91,13 +91,13 @@ Content-Type: application/json
     "data": [
         {
             "id": 1,
-            "name": "Test Segment",
+            "name": "Test Tag",
             "created_at": "2020-03-23 12:44:14",
             "update_at": "2020-03-23 12:44:14"
         },
         {
             "id": 2,
-            "name": "Test Segment Two",
+            "name": "Test Tag Two",
             "created_at": "2020-03-24 08:45:55",
             "update_at": "2020-03-24 08:57:21"
         }
@@ -107,20 +107,20 @@ Content-Type: application/json
 
 ## Update
 
-Replaces the list of segments in a given subscriber with the one supplied in the request.
+Replaces the list of tags assigned to the given subscriber with the list supplied in the request.
 
-If you want to add additional segments to the subscriber without removing existing ones, you should use the Store endpoint. If you want to remove specific segments from the subscriber, you should use the Delete endpoint.
+If you want to assign additional tags to the subscriber without removing existing ones, you should use the Store endpoint. If you want to remove specific tags from the subscriber, you should use the Delete endpoint.
 
 #### Endpoint
 
-`PUT /api/v1/workspaces/{workspaceId}/subscribers/{subscriberId}/segments`
+`PUT /api/v1/workspaces/{workspaceId}/subscribers/{subscriberId}/tags`
 
 #### Expected Response Code
 200
 
 #### Request Fields
 
-- segments: `array<int>`
+- tags: `array<int>`
 
 #### Response Fields
 
@@ -133,14 +133,14 @@ If you want to add additional segments to the subscriber without removing existi
 #### Sample Request
 
 ```
-PUT /api/v1/workspaces/1/subscribers/1/segments HTTP/1.1
+PUT /api/v1/workspaces/1/subscribers/1/tags HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
 Accept: application/json
 Content-Type: application/json
 
 {
-	"segments": [1, 2]
+	"tags": [1, 2]
 }
 ```
 
@@ -151,13 +151,13 @@ Content-Type: application/json
     "data": [
         {
             "id": 1,
-            "name": "Test Segment",
+            "name": "Test Tag",
             "created_at": "2020-03-23 12:44:14",
             "update_at": "2020-03-23 12:44:14"
         },
         {
             "id": 2,
-            "name": "Test Segment Two",
+            "name": "Test Tag Two",
             "created_at": "2020-03-24 08:45:55",
             "update_at": "2020-03-24 08:57:21"
         }
@@ -169,18 +169,18 @@ Content-Type: application/json
 
 ### Usage
 
-Removes the provided segments from the subscriber.
+Removes the given tags from the subscriber.
 
 #### Endpoint
 
-`DELETE /api/v1/workspaces/{workspaceId}/subscribers/{subscriberId}/segments`
+`DELETE /api/v1/workspaces/{workspaceId}/subscribers/{subscriberId}/tags`
 
 #### Expected Response Code
 200
 
 #### Request Fields
 
-- segments: `array<int>`
+- tags: `array<int>`
 
 #### Response Fields
 
@@ -193,14 +193,14 @@ Removes the provided segments from the subscriber.
 #### Sample Request
 
 ```
-DELETE /api/v1/workspaces/1/subscribers/1/segments HTTP/1.1
+DELETE /api/v1/workspaces/1/subscribers/1/tags HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
 Accept: application/json
 Content-Type: application/json
 
 {
-	"segments": [2]
+	"tags": [2]
 }
 ```
 
@@ -211,7 +211,7 @@ Content-Type: application/json
     "data": [
         {
             "id": 1,
-            "name": "Test Segment",
+            "name": "Test Tag",
             "created_at": "2020-03-23 12:44:14",
             "update_at": "2020-03-23 12:44:14"
         }

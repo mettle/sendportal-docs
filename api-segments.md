@@ -1,14 +1,14 @@
-# Segments
+# Tags
 
 ## Index
 
-Retrieve a paginated list of all segments.
+Retrieve a paginated list of tags.
 
 ### Usage
 
 #### Endpoint
 
-`GET /api/v1/workspaces/{workspaceId}/segments`
+`GET /api/v1/workspaces/{workspaceId}/tags`
 
 #### Expected Response Code
 200
@@ -24,7 +24,7 @@ Retrieve a paginated list of all segments.
 #### Sample Request
 
 ```
-GET /api/v1/workspaces/1/segments HTTP/1.1
+GET /api/v1/workspaces/1/tags HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
 Accept: application/json
@@ -37,14 +37,14 @@ Accept: application/json
     "data": [
         {
             "id": 1,
-            "name": "Test Segment",
+            "name": "Test Tag",
             "created_at": "2020-03-23 12:44:14",
             "update_at": "2020-03-23 12:44:14"
         }
     ],
     "links": {
-        "first": "<https://sendportal.local/api/v1/workspaces/1/segments?page=1>",
-        "last": "<https://sendportal.local/api/v1/workspaces/1/segments?page=1>",
+        "first": "<https://sendportal.local/api/v1/workspaces/1/tags?page=1>",
+        "last": "<https://sendportal.local/api/v1/workspaces/1/tags?page=1>",
         "prev": null,
         "next": null
     },
@@ -52,7 +52,7 @@ Accept: application/json
         "current_page": 1,
         "from": 1,
         "last_page": 1,
-        "path": "<https://sendportal.local/api/v1/workspaces/1/segments>",
+        "path": "<https://sendportal.local/api/v1/workspaces/1/tags>",
         "per_page": 25,
         "to": 1,
         "total": 1
@@ -62,13 +62,13 @@ Accept: application/json
 
 ## Show
 
-Get details of a single segment.
+Get details of a single tag.
 
 ### Usage
 
 #### Endpoint
 
-`GET /api/v1/workspaces/{workspaceId}/segments/{segmentId}`
+`GET /api/v1/workspaces/{workspaceId}/tags/{tagId}`
 
 #### Expected Response Code
 200
@@ -84,7 +84,7 @@ Get details of a single segment.
 #### Sample Request
 
 ```
-GET /api/v1/workspaces/1/segments/1 HTTP/1.1
+GET /api/v1/workspaces/1/tags/1 HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
 Accept: application/json
@@ -96,7 +96,7 @@ Accept: application/json
 {
     "data": {
         "id": 1,
-        "name": "Test Segment",
+        "name": "Test Tag",
         "created_at": "2020-03-23 12:44:14",
         "update_at": "2020-03-23 12:44:14"
     }
@@ -105,13 +105,13 @@ Accept: application/json
 
 ## Store
 
-Create a new segment, optionally including subscribers that should be in the segment.
+Create a new tag, optionally including subscribers that should have it assigned to them.
 
 ### Usage
 
 #### Endpoint
 
-`POST /api/v1/workspaces/{workspaceId}/segments`
+`POST /api/v1/workspaces/{workspaceId}/tags`
 
 #### Expected Response Code
 201
@@ -139,14 +139,14 @@ Create a new segment, optionally including subscribers that should be in the seg
 #### Sample Request
 
 ```
-POST /api/workspaces/1/segments HTTP/1.1
+POST /api/workspaces/1/tags HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
 Accept: application/json
 Content-Type: application/json
 
 {
-	"name": "Test Segment Two",
+	"name": "Test Tag Two",
 	"subscribers": [1]
 }
 ```
@@ -157,7 +157,7 @@ Content-Type: application/json
 {
     "data": {
         "id": 2,
-        "name": "Test Segment Two",
+        "name": "Test Tag Two",
         "subscribers": [
             {
                 "id": 1,
@@ -176,13 +176,13 @@ Content-Type: application/json
 
 ## Update
 
-Update the details of the given segment. If you wish to adjust the subscribers associated with the segment, see the Segment Subscribers API.
+Update the details of the given tag. If you wish to adjust the subscribers associated with the tag, see the Tag Subscribers API.
 
 ### Usage
 
 #### Endpoint
 
-`PUT /api/v1/workspaces/{workspaceId}/segments/{segmentId}`
+`PUT /api/v1/workspaces/{workspaceId}/tags/{tagId}`
 
 #### Expected Response Code
 200
@@ -202,14 +202,14 @@ Update the details of the given segment. If you wish to adjust the subscribers a
 #### Sample Request
 
 ```
-PUT /api/v1/workspaces/1/segments/2 HTTP/1.1
+PUT /api/v1/workspaces/1/tags/2 HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
 Accept: application/json
 Content-Type: application/json
 
 {
-	"name": "Updated Segment"
+	"name": "Updated Tag"
 }
 ```
 
@@ -219,7 +219,7 @@ Content-Type: application/json
 {
     "data": {
         "id": 2,
-        "name": "Updated Segment",
+        "name": "Updated Tag",
         "created_at": "2020-03-24 08:45:55",
         "update_at": "2020-03-24 08:57:21"
     }
@@ -228,11 +228,11 @@ Content-Type: application/json
 
 ## Delete
 
-Delete the given segment.
+Delete the given tag.
 
 #### Endpoint
 
-`DELETE /api/v1/workspaces/{workspaceId}/segments/{segmentId}`
+`DELETE /api/v1/workspaces/{workspaceId}/tags/{tagId}`
 
 #### Expected Response Code
 204
@@ -240,7 +240,7 @@ Delete the given segment.
 #### Sample Request
 
 ```
-DELETE /api/v1/workspaces/1/segments/2 HTTP/1.1
+DELETE /api/v1/workspaces/1/tags/2 HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
 Accept: application/json

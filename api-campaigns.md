@@ -17,7 +17,7 @@
     - open_count: `int` (readonly)
     - click_count: `int` (readonly)
     - send_to_all: `bool`
-    - segments: `array`
+    - tags: `array`
     - save_as_draft: `bool`
     - scheduled_at: `datetime`
     - created_at: `datetime` (readonly)
@@ -70,7 +70,7 @@ Accept: application/json
             "open_count": 0,
             "click_count": 0,
             "send_to_all": true,
-            "segments": [],
+            "tags": [],
             "save_as_draft": false,
             "scheduled_at": "2020-07-24 08:46:54",
             "created_at": "2020-07-24 08:23:38",
@@ -141,7 +141,7 @@ Accept: application/json
         "open_count": 0,
         "click_count": 0,
         "send_to_all": true,
-        "segments": [],
+        "tags": [],
         "save_as_draft": false,
         "scheduled_at": "2020-07-24 08:46:54",
         "created_at": "2020-07-24 08:23:38",
@@ -175,7 +175,7 @@ Create a new campaign.
 - is_open_tracking: `bool` (optional)
 - is_click_tracking: `bool` (optional)
 - send_to_all: `bool` (optional)
-- segments: `array<int>` (optional)
+- tags: `array<int>` (optional)
 - save_as_draft: `bool` (optional)
 
 #### Response Fields
@@ -227,7 +227,7 @@ Content-Type: application/json
         "open_count": 0,
         "click_count": 0,
         "send_to_all": true,
-        "segments": [],
+        "tags": [],
         "save_as_draft": false,
         "scheduled_at": "2020-07-24 08:46:54",
         "created_at": "2020-07-24 08:23:38",
@@ -261,7 +261,7 @@ Update a campaign.
 - is_open_tracking: `bool` (optional)
 - is_click_tracking: `bool` (optional)
 - send_to_all: `bool` (optional)
-- segments: `array<int>` (optional)
+- tags: `array<int>` (optional)
 - save_as_draft: `bool` (optional)
 
 #### Response Fields
@@ -303,7 +303,7 @@ Content-Type: application/json
         "open_count": 0,
         "click_count": 0,
         "send_to_all": true,
-        "segments": [],
+        "tags": [],
         "save_as_draft": false,
         "scheduled_at": "2020-07-24 08:46:54",
         "created_at": "2020-07-24 08:23:38",
@@ -362,7 +362,7 @@ Content-Type: application/json
         "open_count": 0,
         "click_count": 0,
         "send_to_all": true,
-        "segments": [],
+        "tags": [],
         "save_as_draft": false,
         "scheduled_at": "2020-07-24 08:46:54",
         "created_at": "2020-07-24 08:23:38",

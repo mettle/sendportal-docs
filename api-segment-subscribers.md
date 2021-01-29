@@ -1,14 +1,14 @@
-# Segment Subscribers
+# Tag Subscribers
 
 ## Index
 
-Retrieve a list of the subscribers in the segment.
+Retrieve a list of subscribers who have been assigned the given tag.
 
 ### Usage
 
 #### Endpoint
 
-`GET /api/v1/workspaces/{workspaceId}/segments/{segmentId}/subscribers`
+`GET /api/v1/workspaces/{workspaceId}/tags/{tagId}/subscribers`
 
 #### Expected Response Code
 200
@@ -26,7 +26,7 @@ Retrieve a list of the subscribers in the segment.
 #### Sample Request
 
 ```
-GET /api/v1/workspaces/1/segments/1/subscribers HTTP/1.1
+GET /api/v1/workspaces/1/tags/1/subscribers HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
 Accept: application/json
@@ -51,13 +51,13 @@ Accept: application/json
 
 ## Store
 
-Adds a list of subscribers to the given segment. Returns a list of the subscribers that are in the segment.
+Assign the given tag to a list of subscribers. Returns a list of subscribers that have been assigned the given tag.
 
-This endpoint is idempotent, meaning that subscribers already added to the segment will not be continuously added to the segment on repeated requests to this endpoint. However, if the intention is to supply a full list of subscribers that should be in the segment, the Update endpoint should be used instead.
+This endpoint is idempotent, meaning that subscribers who have already been assigned the tag will not be continuously tagged on repeated requests to this endpoint. If the intention is to supply a full list of subscribers that should be tagged, the Update endpoint should be used instead.
 
 #### Endpoint
 
-`POST /api/v1/workspaces/{workspaceId}/segments/{segmentId}/subscribers`
+`POST /api/v1/workspaces/{workspaceId}/tags/{tagId}/subscribers`
 
 #### Expected Response Code
 200
@@ -79,7 +79,7 @@ This endpoint is idempotent, meaning that subscribers already added to the segme
 #### Sample Request
 
 ```
-POST /api/v1/workspaces/1/segments/1/subscribers HTTP/1.1
+POST /api/v1/workspaces/1/tags/1/subscribers HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
 Accept: application/json
@@ -117,13 +117,13 @@ Content-Type: application/json
 
 ## Update
 
-Replaces the list of subscribers in a given segment with the one supplied in the request.
+Replace all subscribers assigned a given tag with the list provided in the request.
 
-If you want to add additional subscribers to the segment without removing existing ones, you should use the Store endpoint. If you want to remove specific subscribers from the segment, you should use the Delete endpoint.
+If you want to assign a tag to additional subscriber without removing existing ones, you should use the Store endpoint. If you want to remove the tag from specific subscribers, you should use the Delete endpoint.
 
 #### Endpoint
 
-`PUT /api/v1/workspaces/{workspaceId}/segments/{segmentId}/subscribers`
+`PUT /api/v1/workspaces/{workspaceId}/tags/{tagId}/subscribers`
 
 #### Expected Response Code
 200
@@ -145,7 +145,7 @@ If you want to add additional subscribers to the segment without removing existi
 #### Sample Request
 
 ```
-PUT /api/v1/workspaces/1/segments/1/subscribers HTTP/1.1
+PUT /api/v1/workspaces/1/tags/1/subscribers HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
 Accept: application/json
@@ -183,11 +183,11 @@ Content-Type: application/json
 
 ## Delete
 
-Removes the provided subscribers from the segment.
+Removes the given tag from the subscribers provided in the request.
 
 #### Endpoint
 
-`DELETE /api/v1/workspaces/{workspaceId}/segments/{segmentId}/subscribers`
+`DELETE /api/v1/workspaces/{workspaceId}/tags/{tagId}/subscribers`
 
 #### Expected Response Code
 200
@@ -209,7 +209,7 @@ Removes the provided subscribers from the segment.
 #### Sample Request
 
 ```
-DELETE /api/v1/workspaces/1/segments/1/subscribers HTTP/1.1
+DELETE /api/v1/workspaces/1/tags/1/subscribers HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
 Accept: application/json

@@ -77,7 +77,7 @@ Accept: application/json
 
 ## Show
 
-Retrieve the details of a single subscriber, including the segments.
+Retrieve the details of a single subscriber, including its tags.
 
 ### Usage
 
@@ -95,7 +95,7 @@ Retrieve the details of a single subscriber, including the segments.
     - first_name: `string`
     - last_name: `string`
     - email: `string`
-    - segments: `array<object>`
+    - tags: `array<object>`
         - id: `int`
         - string: `string`
         - created_at: `datetime`
@@ -122,10 +122,10 @@ Accept: application/json
         "first_name": "Test",
         "last_name": "Subscriber",
         "email": "testsubscriber@example.com",
-        "segments": [
+        "tags": [
             {
                 "id": 1,
-                "name": "Test Segment",
+                "name": "Test Tag",
                 "created_at": "2020-03-23 12:44:14",
                 "update_at": "2020-03-23 12:44:14"
             }
@@ -139,7 +139,7 @@ Accept: application/json
 
 ## Store
 
-Create a new subscriber, optionally including segments the subscriber should be included in.
+Create a new subscriber, optionally including tags the subscriber should be included in.
 
 ### Usage
 
@@ -156,7 +156,7 @@ Create a new subscriber, optionally including segments the subscriber should be 
 - last_name: `string` (optional)
 - email: `string`
 - unsubscribed_at: `datetime` (optional)
-- segments: `array<int>` (optional)
+- tags: `array<int>` (optional)
 
 #### Response Fields
 
@@ -165,7 +165,7 @@ Create a new subscriber, optionally including segments the subscriber should be 
     - first_name: `string`
     - last_name: `string`
     - email: `string`
-    - segments: `array<object>`
+    - tags: `array<object>`
         - id: `int`
         - name: `int`
         - created_at: `datetime`
@@ -187,7 +187,7 @@ Content-Type: application/json
 	"first_name": "Test",
 	"last_name": "Subscriber Two",
 	"email": "testsubscriber2@example.com",
-	"segments": [1]
+	"tags": [1]
 }
 ```
 
@@ -200,10 +200,10 @@ Content-Type: application/json
         "first_name": "Test",
         "last_name": "Subscriber two",
         "email": "testsubscriber2@example.com",
-        "segments": [
+        "tags": [
             {
                 "id": 1,
-                "name": "Test Segment",
+                "name": "Test Tag",
                 "created_at": "2020-03-23 12:44:14",
                 "update_at": "2020-03-23 12:44:14"
             }
@@ -258,7 +258,7 @@ Content-Type: application/json
 	"first_name": "Test",
 	"last_name": "Subscriber Two Updated",
 	"email": "testsubscriber2@example.com",
-	"segments": [1]
+	"tags": [1]
 }
 ```
 
