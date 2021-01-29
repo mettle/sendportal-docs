@@ -1,5 +1,7 @@
 # SendPortal v1 To v2 Upgrade Guide
 
+> Please see the "Notable Changes" section at the bottom of this document for a list of changes that could impact your use of SendPortal after the upgrade.
+
 ## Requirements
 
 ### SendPortal
@@ -52,5 +54,17 @@ php artisan horizon:publish
 
 > For more information about Horizon, see _Running Redis Queues With Laravel Horizon_ in [Configuration & Setup](/docs/getting-started/configuration-and-setup).
 
-## Complete
-If all of these steps complete successfully, you will now have SendPortal v2 installed.
+## Notable Changes
+The following things have been notably changed between v1 and v2. Please check to see if any of these changes impact your use of SendPortal before you upgrade.
+
+### API Tokens Are Now On Workspaces
+API tokens are now attached to a workspace, not a user. User API tokens have been removed. To continue using the API you will need to generate an API token for your workspace(s). See [API Introduction](/docs/api/introduction) for more information on how to do this.
+
+### Workspace API Removed
+Because API tokens are now per-workspace, the workspace API that allowed a user to fetch a list of workspaces has been removed, as it no longer makes sense.
+
+### Segments Changed To Tags
+Segments have been renamed to Tags throughout the application, including the API and database.
+
+### SendPortal As A Package
+SendPortal can now be included in an existing application as a package. See [Package Installation](/docs/package-installation) for more details.
