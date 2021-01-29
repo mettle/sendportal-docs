@@ -1,16 +1,23 @@
 # SendPortal v1 To v2 Upgrade Guide
 
 ## Requirements
+
+### SendPortal
 Before upgrading to SendPortal v2, you __must__ make sure you have the latest version of SendPortal v1, __with all migrations run__. If this isn't done, you _will_ encounter issues with the upgrade process.
 
 > We recommend creating a database backup for your SendPortal installation before proceeding with the v2 upgrade.
+
+### PHP
+SendPortal v2 bumps the minimum supported version of PHP from 7.2.5 to __7.3__.
+
+> We recommend using the latest version of PHP possible, as older versions do not receive bug fixes or security updates.
 
 ## Getting The Latest Version
 Get the latest version of SendPortal by performing a git pull from GitHub:
 
 ```
 cd sendportal-install-directory
-git pull
+git pull origin master
 ```
 
 ## Applying The Changes
