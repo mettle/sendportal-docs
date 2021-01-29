@@ -3,6 +3,8 @@
 ## Requirements
 Before upgrading to SendPortal v2, you __must__ make sure you have the latest version of SendPortal v1, __with all migrations run__. If this isn't done, you _will_ encounter issues with the upgrade process.
 
+> We recommend creating a database backup for your SendPortal installation before proceeding with the v2 upgrade.
+
 ## Getting The Latest Version
 Get the latest version of SendPortal by performing a git pull from GitHub:
 
