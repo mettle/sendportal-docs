@@ -45,7 +45,7 @@ Retrieve a paginated list of all campaigns.
 ```
 GET /api/v1/workspaces/1/campaigns HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 ```
 
@@ -117,7 +117,7 @@ Get details of a single campaign.
 ```
 GET /api/v1/workspaces/1/campaigns/1 HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 ```
 
@@ -187,7 +187,7 @@ Create a new campaign.
 ```
 POST /api/workspaces/1/campaigns HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 Content-Type: application/json
 
@@ -273,7 +273,7 @@ Update a campaign.
 ```
 PUT /api/v1/workspaces/1/campaigns/2 HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 Content-Type: application/json
 
@@ -337,7 +337,7 @@ None
 ```
 POST /api/v1/workspaces/1/campaigns/2/send HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 Content-Type: application/json
 ```

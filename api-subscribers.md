@@ -29,7 +29,7 @@ Retrieve a paginated list of all subscribers.
 ```
 GET /api/v1/workspaces/1/subscribers HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 ```
 
@@ -109,7 +109,7 @@ Retrieve the details of a single subscriber, including the segments.
 ```
 GET /api/v1/workspaces/1/subscribers/1 HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 ```
 
@@ -179,7 +179,7 @@ Create a new subscriber, optionally including segments the subscriber should be 
 ```
 POST /api/v1/workspaces/1/subscribers HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 Content-Type: application/json
 
@@ -250,7 +250,7 @@ Update the details of the given subscriber.
 ```
 PUT /api/v1/workspaces/1/subscribers/2 HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 Content-Type: application/json
 
@@ -296,6 +296,6 @@ Delete the given subscriber.
 ```
 DELETE /api/v1/workspaces/1/subscribers/2 HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 ```

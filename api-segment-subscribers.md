@@ -28,7 +28,7 @@ Retrieve a list of the subscribers in the segment.
 ```
 GET /api/v1/workspaces/1/segments/1/subscribers HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 ```
 
@@ -81,7 +81,7 @@ This endpoint is idempotent, meaning that subscribers already added to the segme
 ```
 POST /api/v1/workspaces/1/segments/1/subscribers HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 Content-Type: application/json
 
@@ -147,7 +147,7 @@ If you want to add additional subscribers to the segment without removing existi
 ```
 PUT /api/v1/workspaces/1/segments/1/subscribers HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 Content-Type: application/json
 
@@ -211,7 +211,7 @@ Removes the provided subscribers from the segment.
 ```
 DELETE /api/v1/workspaces/1/segments/1/subscribers HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 Content-Type: application/json
 

@@ -27,7 +27,7 @@ Retrieve a paginated list of all templates.
 ```
 GET /api/v1/workspaces/1/templates HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 ```
 
@@ -89,7 +89,7 @@ Retrieve the details of a single template.
 ```
 GET /api/v1/workspaces/1/templates/1 HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 ```
 
@@ -139,7 +139,7 @@ Create a new template.
 ```
 POST /api/v1/workspaces/1/templates HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 Content-Type: application/json
 
@@ -194,7 +194,7 @@ Update the details of the given template.
 ```
 PUT /api/v1/workspaces/1/templates/3 HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 Content-Type: application/json
 
@@ -236,6 +236,6 @@ Delete the given template.
 ```
 DELETE /api/v1/workspaces/1/templates/3 HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 ```

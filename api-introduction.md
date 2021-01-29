@@ -16,18 +16,28 @@ A `Content-Type` header should be supplied with the value `application/json`.
 
 ## Authentication
 
-Authentication for the API is performed on a per-user basis by supplying a token with the API request.
+Authentication for the API is performed on a per-workspace basis by supplying a token with the API request.
+
+### Generating Tokens
+
+Tokens for a workspace must be generated before they can be used.
+
+While working under the desired workspace, click on the user name in the top right corner, and then click _API Tokens_ from the menu.
+
+You will see a list of any previously generated API tokens, including when they were generated and an option to delete them.
+
+To add a new token, optionally provide a description for the token, and then click _Add Token_.
+
+You will now be able to use the generated token to authenticate as the current workspace when interacting with the API.
 
 ### Bearer Token
 
-The preferred way to authenticate with the API during a request is to use the user’s token as a Bearer token. This is done by supplying an `Authorization` header with the request, where the value is `Bearer {api_token}`.
-
-The token is available from the logged in user's profile.
+The preferred way to authenticate with the API during a request is to use the workspace's token as a Bearer token. This is done by supplying an `Authorization` header with the request, where the value is `Bearer {api_token}`.
 
 #### Example
 
 ```
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 ```
 
 ### API Token Parameter
@@ -37,14 +47,14 @@ Alternatively, you can authenticate by providing the token as a parameter when m
 #### GET Example
 
 ```
-/api/v1/ping?api_token=GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+/api/v1/ping?api_token=9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 ```
 
 #### POST Example
 
 ```
 {
-    "api_token": "GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev"
+    "api_token": "9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ"
 }
 ```
 
