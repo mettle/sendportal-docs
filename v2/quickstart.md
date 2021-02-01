@@ -60,7 +60,7 @@ You can test the email by entering an address in the Test Email section and clic
 
 ### Recipients
 
-Specify who the campaign should be sent to; either **All Subscribers,** or one or more **Segments**.
+Specify who the campaign should be sent to; either **All Subscribers,** or those with one or more **tags** assigned to them.
 
 ### Schedule
 

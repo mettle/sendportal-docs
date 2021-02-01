@@ -67,7 +67,7 @@ It's good practice to send out a test email before you dispatch your campaign. T
 
 #### Recipients
 
-You can choose to dispatch your campaign to your entire subscriber list or specific segments.
+You can choose to dispatch your campaign to your entire subscriber list or those with specific tags.
 
 #### Schedule
 

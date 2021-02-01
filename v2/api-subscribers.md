@@ -29,7 +29,7 @@ Retrieve a paginated list of all subscribers.
 ```
 GET /api/v1/workspaces/1/subscribers HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 ```
 
@@ -77,7 +77,7 @@ Accept: application/json
 
 ## Show
 
-Retrieve the details of a single subscriber, including the segments.
+Retrieve the details of a single subscriber, including its tags.
 
 ### Usage
 
@@ -95,7 +95,7 @@ Retrieve the details of a single subscriber, including the segments.
     - first_name: `string`
     - last_name: `string`
     - email: `string`
-    - segments: `array<object>`
+    - tags: `array<object>`
         - id: `int`
         - string: `string`
         - created_at: `datetime`
@@ -109,7 +109,7 @@ Retrieve the details of a single subscriber, including the segments.
 ```
 GET /api/v1/workspaces/1/subscribers/1 HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 ```
 
@@ -122,10 +122,10 @@ Accept: application/json
         "first_name": "Test",
         "last_name": "Subscriber",
         "email": "testsubscriber@example.com",
-        "segments": [
+        "tags": [
             {
                 "id": 1,
-                "name": "Test Segment",
+                "name": "Test Tag",
                 "created_at": "2020-03-23 12:44:14",
                 "update_at": "2020-03-23 12:44:14"
             }
@@ -139,7 +139,13 @@ Accept: application/json
 
 ## Store
 
-Create a new subscriber, optionally including segments the subscriber should be included in.
+Create a new subscriber, optionally including tags that should be assigned to them; or update an existing subscriber based on their email address, optionally including the tags that should be assigned to them.
+
+This endpoint is overloaded to allow for the update of existing subscribers based on the email address provided in the request. This allows for a workflow where the caller of the API needn't know whether the subscriber is already created; this eliminates the need for developers to create different logical paths in their application and also allows subscribers to be updated without prior knowledge of their internal SendPortal ID.
+
+The rules for creating new subscribers or updating existing subscribers are as follows:
+- If the email address is not currently used for a subscriber in the workspace, then a new subscriber will be created using the email address, name and tags provided
+- If the email address is currently used by a subscriber in the workspace, then that subscriber will be updated using the name and tags provided
 
 ### Usage
 
@@ -156,7 +162,7 @@ Create a new subscriber, optionally including segments the subscriber should be 
 - last_name: `string` (optional)
 - email: `string`
 - unsubscribed_at: `datetime` (optional)
-- segments: `array<int>` (optional)
+- tags: `array<int>` (optional)
 
 #### Response Fields
 
@@ -165,7 +171,7 @@ Create a new subscriber, optionally including segments the subscriber should be 
     - first_name: `string`
     - last_name: `string`
     - email: `string`
-    - segments: `array<object>`
+    - tags: `array<object>`
         - id: `int`
         - name: `int`
         - created_at: `datetime`
@@ -179,7 +185,7 @@ Create a new subscriber, optionally including segments the subscriber should be 
 ```
 POST /api/v1/workspaces/1/subscribers HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 Content-Type: application/json
 
@@ -187,7 +193,7 @@ Content-Type: application/json
 	"first_name": "Test",
 	"last_name": "Subscriber Two",
 	"email": "testsubscriber2@example.com",
-	"segments": [1]
+	"tags": [1]
 }
 ```
 
@@ -200,10 +206,10 @@ Content-Type: application/json
         "first_name": "Test",
         "last_name": "Subscriber two",
         "email": "testsubscriber2@example.com",
-        "segments": [
+        "tags": [
             {
                 "id": 1,
-                "name": "Test Segment",
+                "name": "Test Tag",
                 "created_at": "2020-03-23 12:44:14",
                 "update_at": "2020-03-23 12:44:14"
             }
@@ -250,7 +256,7 @@ Update the details of the given subscriber.
 ```
 PUT /api/v1/workspaces/1/subscribers/2 HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 Content-Type: application/json
 
@@ -258,7 +264,7 @@ Content-Type: application/json
 	"first_name": "Test",
 	"last_name": "Subscriber Two Updated",
 	"email": "testsubscriber2@example.com",
-	"segments": [1]
+	"tags": [1]
 }
 ```
 
@@ -296,6 +302,6 @@ Delete the given subscriber.
 ```
 DELETE /api/v1/workspaces/1/subscribers/2 HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 ```

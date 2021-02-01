@@ -2,26 +2,26 @@
 
 ## Campaign Object
 - data: `object`
-    - id: `int` (readonly)
-    - name: `string`
-    - subject: `string`
-    - content: `string`
-    - status_id: `int` (readonly)
-    - template_id: `int`
-    - email_service_id: `int`
-    - from_name: `string`
-    - from_email: `string`
-    - is_open_tracking: `bool`
-    - is_click_tracking: `bool`
-    - sent_count: `int` (readonly)
-    - open_count: `int` (readonly)
-    - click_count: `int` (readonly)
-    - send_to_all: `bool`
-    - segments: `array`
-    - save_as_draft: `bool`
-    - scheduled_at: `datetime`
-    - created_at: `datetime` (readonly)
-    - updated_at: `datetime` (readonly)
+  - id: `int` (readonly)
+  - name: `string`
+  - subject: `string`
+  - content: `string`
+  - status_id: `int` (readonly)
+  - template_id: `int`
+  - email_service_id: `int`
+  - from_name: `string`
+  - from_email: `string`
+  - is_open_tracking: `bool`
+  - is_click_tracking: `bool`
+  - sent_count: `int` (readonly)
+  - open_count: `int` (readonly)
+  - click_count: `int` (readonly)
+  - send_to_all: `bool`
+  - tags: `array`
+  - save_as_draft: `bool`
+  - scheduled_at: `datetime`
+  - created_at: `datetime` (readonly)
+  - updated_at: `datetime` (readonly)
 
 ## Index
 
@@ -45,7 +45,7 @@ Retrieve a paginated list of all campaigns.
 ```
 GET /api/v1/workspaces/1/campaigns HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 ```
 
@@ -70,7 +70,7 @@ Accept: application/json
             "open_count": 0,
             "click_count": 0,
             "send_to_all": true,
-            "segments": [],
+            "tags": [],
             "save_as_draft": false,
             "scheduled_at": "2020-07-24 08:46:54",
             "created_at": "2020-07-24 08:23:38",
@@ -117,7 +117,7 @@ Get details of a single campaign.
 ```
 GET /api/v1/workspaces/1/campaigns/1 HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 ```
 
@@ -141,7 +141,7 @@ Accept: application/json
         "open_count": 0,
         "click_count": 0,
         "send_to_all": true,
-        "segments": [],
+        "tags": [],
         "save_as_draft": false,
         "scheduled_at": "2020-07-24 08:46:54",
         "created_at": "2020-07-24 08:23:38",
@@ -175,7 +175,7 @@ Create a new campaign.
 - is_open_tracking: `bool` (optional)
 - is_click_tracking: `bool` (optional)
 - send_to_all: `bool` (optional)
-- segments: `array<int>` (optional)
+- tags: `array<int>` (optional)
 - save_as_draft: `bool` (optional)
 
 #### Response Fields
@@ -187,7 +187,7 @@ Create a new campaign.
 ```
 POST /api/workspaces/1/campaigns HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 Content-Type: application/json
 
@@ -227,7 +227,7 @@ Content-Type: application/json
         "open_count": 0,
         "click_count": 0,
         "send_to_all": true,
-        "segments": [],
+        "tags": [],
         "save_as_draft": false,
         "scheduled_at": "2020-07-24 08:46:54",
         "created_at": "2020-07-24 08:23:38",
@@ -261,7 +261,7 @@ Update a campaign.
 - is_open_tracking: `bool` (optional)
 - is_click_tracking: `bool` (optional)
 - send_to_all: `bool` (optional)
-- segments: `array<int>` (optional)
+- tags: `array<int>` (optional)
 - save_as_draft: `bool` (optional)
 
 #### Response Fields
@@ -273,7 +273,7 @@ Update a campaign.
 ```
 PUT /api/v1/workspaces/1/campaigns/2 HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 Content-Type: application/json
 
@@ -303,7 +303,7 @@ Content-Type: application/json
         "open_count": 0,
         "click_count": 0,
         "send_to_all": true,
-        "segments": [],
+        "tags": [],
         "save_as_draft": false,
         "scheduled_at": "2020-07-24 08:46:54",
         "created_at": "2020-07-24 08:23:38",
@@ -337,7 +337,7 @@ None
 ```
 POST /api/v1/workspaces/1/campaigns/2/send HTTP/1.1
 Host: sendportal.local
-Authorization: Bearer GbvZ6u0UJU7EE2thKTgj1mMH7yaCm23JKRomIpkiIuZ7kfWLlVBqraAldz7Fxezw3B2M45NFL2OUm5ev
+Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 Content-Type: application/json
 ```
@@ -346,27 +346,27 @@ Content-Type: application/json
 
 ```json
 {
-    "data": {
-        "id": 1,
-        "name": "name",
-        "subject": "My New Campaign Subject",
-        "content": "My New Email Content",
-        "status_id": 2,
-        "template_id": 1,
-        "email_service_id": 1,
-        "from_name": "SendPortal",
-        "from_email": "test@sendportal.io",
-        "is_open_tracking": true,
-        "is_click_tracking": true,
-        "sent_count": 0,
-        "open_count": 0,
-        "click_count": 0,
-        "send_to_all": true,
-        "segments": [],
-        "save_as_draft": false,
-        "scheduled_at": "2020-07-24 08:46:54",
-        "created_at": "2020-07-24 08:23:38",
-        "updated_at": "2020-07-24 09:43:42"
-    }
+  "data": {
+    "id": 1,
+    "name": "name",
+    "subject": "My New Campaign Subject",
+    "content": "My New Email Content",
+    "status_id": 2,
+    "template_id": 1,
+    "email_service_id": 1,
+    "from_name": "SendPortal",
+    "from_email": "test@sendportal.io",
+    "is_open_tracking": true,
+    "is_click_tracking": true,
+    "sent_count": 0,
+    "open_count": 0,
+    "click_count": 0,
+    "send_to_all": true,
+    "tags": [],
+    "save_as_draft": false,
+    "scheduled_at": "2020-07-24 08:46:54",
+    "created_at": "2020-07-24 08:23:38",
+    "updated_at": "2020-07-24 09:43:42"
+  }
 }
 ```
