@@ -20,19 +20,18 @@ Authentication for the API is performed on a per-workspace basis by supplying a 
 
 ### Generating Tokens
 
-Tokens for a workspace must be generated before they can be used.
+To view your existing tokens, or to generate a new token, perform the following steps for each of your Workspaces:
 
-While working under the desired workspace, click on the user name in the top right corner, and then click _API Tokens_ from the menu.
+  - Click on your user name in the top right corner
+  - Select _API Tokens_ from the menu.
+  - You will see a list of any previously generated API tokens, including when they were generated and an option to delete them.
+  - To add a new token, optionally provide a description for the token, and then click _Add Token_.
 
-You will see a list of any previously generated API tokens, including when they were generated and an option to delete them.
-
-To add a new token, optionally provide a description for the token, and then click _Add Token_.
-
-You will now be able to use the generated token to authenticate as the current workspace when interacting with the API.
+You will now be able to use the generated token to authenticate with the API for the current workspace.
 
 ### Bearer Token
 
-The preferred way to authenticate with the API during a request is to use the workspace's token as a Bearer token. This is done by supplying an `Authorization` header with the request, where the value is `Bearer {api_token}`.
+The preferred way to authenticate with the API during a request is to use the token as a Bearer token. This is performed by supplying an `Authorization` header with the request, where the value is `Bearer {api_token}`.
 
 #### Example
 
