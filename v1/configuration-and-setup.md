@@ -167,7 +167,7 @@ You will of course need an installation of redis on your server. You will then n
 
 ### Running the queue without Laravel Horizon
 
-If you don't want to use Horizon to manage you redis queue or you're using the database driver you will have to run a [queue worker](https://laravel.com/docs/7.x/queues#running-the-queue-worker) for each queue that Sendportal uses.
+If you don't want to use Horizon to manage you redis queue or you're using the database driver you will have to run a [queue worker](https://laravel.com/docs/queues#running-the-queue-worker) for each queue that Sendportal uses.
 
 - `sendportal-message-dispatch`: dispatches messages to the email service
 - `sendportal-webhook-process`: processes incoming webhooks
@@ -179,7 +179,7 @@ php artisan queue:work --queue=sendportal-webhook-process
 
 ### Running Redis Queues With Laravel Horizon
 
-SendPortal bundles [Laravel Horizon](https://laravel.com/docs/7.x/horizon) as an easy way to run and manage redis queues.
+SendPortal bundles [Laravel Horizon](https://laravel.com/docs/horizon) as an easy way to run and manage redis queues.
 
 Configuration for the queues necessary to run SendPortal is already included. In order to use Horizon as your queue manager, you should first publish the Horizon assets:
 
@@ -193,7 +193,7 @@ To start processing your queue items with Horizon, you simply need to run the fo
 php artisan horizon
 ```
 
-When using Horizon in production, you should consider using a service to ensure the queue runner restarts if it fails for any reason. The Horizon documentation has a [guide](https://laravel.com/docs/7.x/horizon#deploying-horizon) on how to use Supervisor to do this.
+When using Horizon in production, you should consider using a service to ensure the queue runner restarts if it fails for any reason. The Horizon documentation has a [guide](https://laravel.com/docs/horizon#deploying-horizon) on how to use Supervisor to do this.
 
 #### Autoscaling
 

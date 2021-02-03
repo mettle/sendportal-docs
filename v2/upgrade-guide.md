@@ -52,13 +52,13 @@ If you are using Laravel Horizon to manage redis queues, you will need to republ
 php artisan horizon:publish
 ```
 
-> For more information about Horizon, see _Running Redis Queues With Laravel Horizon_ in [Configuration & Setup](/docs/getting-started/configuration-and-setup).
+> For more information about Horizon, see _Running Redis Queues With Laravel Horizon_ in [Configuration & Setup](/docs/v2/getting-started/configuration-and-setup).
 
 ## Notable Changes
 The following functionality has changed between v1 and v2. Please check to see if any of these changes impact your use of SendPortal before you upgrade.
 
 ### API Tokens Are Now On Workspaces
-API tokens were previously attached a user, but these have now been moved to a workspace. User API tokens have been removed. To continue using the API you will need to generate an API token for your workspace(s). See [API Introduction](/docs/api/introduction) for more information on how to do this.
+API tokens were previously attached a user, but these have now been moved to a workspace. User API tokens have been removed. To continue using the API you will need to generate an API token for your workspace(s). See [API Introduction](/docs/v2/api/introduction) for more information on how to do this.
 
 ### Workspace API Removed
 Because API tokens are now per-workspace, the workspace API that allowed a user to fetch a list of workspaces has been removed.
@@ -67,4 +67,4 @@ Because API tokens are now per-workspace, the workspace API that allowed a user 
 Segments have been renamed to Tags throughout the application, including the API and database.
 
 ### SendPortal As A Package
-SendPortal can now be included in an existing application as a package. See [Package Installation](/docs/package-installation) for more details.
+SendPortal can now be included in an existing application as a package. See [Package Installation](/docs/v2/getting-started/package-installation) for more details.

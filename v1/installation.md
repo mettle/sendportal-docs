@@ -23,7 +23,7 @@ git clone https://github.com/mettle/sendportal.git
 
 Once cloned, navigate to the project's root directory and run `composer install` to install SendPortal and its dependencies.
 
-From here, you can move onto the [Configuration & Setup](/docs/getting-started/configuration-and-setup) step.
+From here, you can move onto the [Configuration & Setup](/docs/v1/getting-started/configuration-and-setup) step.
 
 ### Webserver
 

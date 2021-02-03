@@ -1,6 +1,8 @@
 # Package Installation
 
-As of v2, SendPortal officially supports installation as a package in existing Laravel apps, running on Laravel 8 or higher.
+As of Version 2, Sendportal can be installed as a stand-alone application (i.e. including everything you need to run SendPortal), or as a package inside an existing Laravel application. 
+
+This page covers the Package installation. If you want to install SendPortal as a stand-alone application, then head over to the [Installation guide](/docs/v2/installation).
 
 ## Requirements
 

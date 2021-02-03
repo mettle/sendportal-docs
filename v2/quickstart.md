@@ -12,17 +12,17 @@ For more detailed instructions for each feature, refer to the relevant article i
 
 ## Create An Email Service
 
-SendPortal integrates with [Mailgun](/docs/email-services/mailgun), [Amazon SES](/docs/email-services/aws), [Sendgrid](/docs/email-services/sendgrid) and [Postmark](/docs/email-services/postmark).
+SendPortal integrates with [Mailgun](/docs/v2/email-services/mailgun), [Amazon SES](/docs/v2/email-services/aws), [Sendgrid](/docs/v2/email-services/sendgrid) and [Postmark](/docs/v2/email-services/postmark).
 
 > As per their [Terms of Service](https://postmarkapp.com/terms-of-service#email-types-that-we-dont-allow-on-postmark), Postmark should only be used for transactional mail, and not for marketing messages.
 
 Click on the _Email Services_ link in the sidebar and then click the _Add Email Service_ button.
 
-The required information will vary between each service. Full instructions on how to set up each service can be found in the [email service documentation](/docs/email-services/introduction).
+The required information will vary between each service. Full instructions on how to set up each service can be found in the [email service documentation](/docs/v2/email-services/introduction).
 
 ## Add Or Import Subscribers
 
-In order for SendPortal to send emails, you need to set up lists of [subscribers](/docs/features/subscribers). These subscribers can be added in 3 ways:
+In order for SendPortal to send emails, you need to set up lists of [subscribers](/docs/v2/features/subscribers). These subscribers can be added in 3 ways:
 
 - Manually
 - Through the API
@@ -30,17 +30,17 @@ In order for SendPortal to send emails, you need to set up lists of [subscribers
 
 To add a single subscriber manually, click the _Subscribers_ link in the sidebar, and then click _New Subscriber_. You will need to provide an email address for the subscriber and ensure that `Subscribed` is checked. Once you are happy with your subscriber, click _Save_.
 
-Refer to the [subscriber documentation](/docs/features/subscribers) for more information.
+Refer to the [subscriber documentation](/docs/v2/features/subscribers) for more information.
 
 ## Create A Template
 
-A [template](/docs/features/templates) allows you to create consistent branding for all your campaigns, so that you only need to create new content for each campaign.
+A [template](/docs/v2/features/templates) allows you to create consistent branding for all your campaigns, so that you only need to create new content for each campaign.
 
 > Campaigns can be created without a template as well, if desired.
 
 To create a template, click on the _Templates_ link in the sidebar and then click the _Add Template_ button. Templates should contain valid HTML and must include at least a `{{content}}` tag.
 
-Refer to the [templates documentation](/docs/features/templates) for more information.
+Refer to the [templates documentation](/docs/v2/features/templates) for more information.
 
 ## Create A Campaign
 
@@ -48,7 +48,7 @@ To create a campaign, click on the _Campaigns_ link in the sidebar and then clic
 
 If you have created a template in the previous step, you can select it here. The content will be placed into the `{{content}}` tag in the template.
 
-Refer to the [campaign documentation](/docs/features/campaigns) for more information.
+Refer to the [campaign documentation](/docs/v2/features/campaigns) for more information.
 
 ## Send The Campaign
 

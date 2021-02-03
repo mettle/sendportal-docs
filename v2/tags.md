@@ -27,7 +27,7 @@ Tags are very simple and only require a `Name`, which must be unique across all 
 
 ### API
 
-Refer to the [Tags API Documentation](/docs/api/tags) for information on how to manage tags through the API.
+Refer to the [Tags API Documentation](/docs/v2/api/tags) for information on how to manage tags through the API.
 
 ## Deleting Tags
 
@@ -42,4 +42,4 @@ To delete a tag through the application interface, navigate to the tags index pa
 
 ### API
 
-Refer to the [Tags API Documentation](/docs/api/tags) for information on how to delete tags through the API.
+Refer to the [Tags API Documentation](/docs/v2/api/tags) for information on how to delete tags through the API.

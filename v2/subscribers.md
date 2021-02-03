@@ -2,9 +2,9 @@
 
 ## Overview
 
-Subscribers represent individuals that are available to you when sending out campaigns. Subscribers can optionally be assigned one or more [tags](/docs/features/tags).
+Subscribers represent individuals that are available to you when sending out campaigns. Subscribers can optionally be assigned one or more [tags](/docs/v2/features/tags).
 
-> The email address for each Subscriber must be unique in each [workspace](/docs/features/workspaces).
+> The email address for each Subscriber must be unique in each [workspace](/docs/v2/features/workspaces).
 
 ## View Subscribers
 
@@ -92,7 +92,7 @@ Tags can be assigned to subscribers by using the `Tags` selector. If you have an
 
 ### API
 
-Refer to the [subscribers API documentation](/docs/api/subscribers) for information on how to manage subscribers through the API.
+Refer to the [subscribers API documentation](/docs/v2/api/subscribers) for information on how to manage subscribers through the API.
 
 ## Exporting Subscribers
 
@@ -106,7 +106,7 @@ To manually unsubscribe a subscriber, you should go to the subscriber edit page,
 
 ### Unsubscribe Links
 
-SendPortal allows automatic injection of unsubscribe links in your templates and campaigns. See the [templates](/docs/features/templates) section for more information on how this works.
+SendPortal allows automatic injection of unsubscribe links in your templates and campaigns. See the [templates](/docs/v2/features/templates) section for more information on how this works.
 
 When a user clicks on the unsubscribe link, they will be sent to a web page asking them to confirm that they want to be unsubscribed.
 
