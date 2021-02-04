@@ -11,15 +11,6 @@ SendPortal v2 bumps the minimum supported version of PHP from 7.2.5 to __7.3__.
 
 > We recommend using the latest version of PHP possible, as older versions no longer receive bug fixes or security updates.
 
-### SendPortal
-Before upgrading to SendPortal v2, you __must__ make sure you have the latest version of SendPortal v1, __with all migrations run__. If this is not performed, you _will_ encounter issues with the upgrade process.
-
-```bash
-cd /path/to/sendportal
-composer update
-php artisan migrate
-```
-
 ## Updating To The Latest Version
 Get the latest version of SendPortal by performing a git pull from GitHub:
 

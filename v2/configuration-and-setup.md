@@ -19,7 +19,7 @@ Once you have successfully setup SendPortal, you must also follow the [Additiona
 In the SendPortal installation's root directory, run the following command:
 
 ```bash
-php artisan sp:setup
+php artisan sp:install
 ```
 
 The command will prompt you for confirmation on most steps. If this is the first time running setup for an installation, you should answer yes to the prompts in order to ensure that SendPortal is completely set up as expected.
