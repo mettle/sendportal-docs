@@ -1,6 +1,6 @@
 # Installation
 
-As of Version 2, Sendportal can be installed as a stand-alone application (i.e. including everything you need to run SendPortal), or as a package inside an existing Laravel application. 
+As of Version 2, Sendportal can be installed as a stand-alone application (i.e. including everything you need to run SendPortal), or as a package inside an existing Laravel application.
 
 This page covers the stand-alone installation. If you want to install SendPortal as a package, then head over to the [Package Installation guide](/docs/v2/getting-started/package-installation).
 
@@ -21,7 +21,7 @@ To run SendPortal, your environment must meet a few minimum requirements:
 Clone the repository to your environment, using the following command:
 
 ```bash
-git clone https://github.com/mettle/sendportal.git
+git clone --depth 1 --branch v2.0.0 https://github.com/mettle/sendportal.git
 ```
 
 ### Install Dependencies
