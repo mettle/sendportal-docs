@@ -2,7 +2,7 @@
 
 > Please see the "Notable Changes" section at the bottom of this document for a list of changes that could impact your use of SendPortal after the upgrade.
 
-> If you do not wish to upgrade to v2, please see the "Sticking With v1" section at the bottom of this document.
+> If you do not wish to upgrade to v2, please see the "Remaining On v1" section at the bottom of this document.
 
 ## Requirements
 
@@ -81,7 +81,7 @@ Segments have been renamed to Tags throughout the application, including the API
 ### SendPortal As A Package
 SendPortal can now be included in an existing application as a package. See [Package Installation](/docs/v2/getting-started/package-installation) for more details.
 
-## Sticking With v1
+## Remaining On v1
 If you are not yet ready to upgrade to v2, you will need to ensure you are using a v1 tag. You may already be doing this; however, previous versions of SendPortal were installed by tracking the "master" branch, which always includes the very latest changes.
 
 To check whether you are using a tagged version, navigate to your SendPortal installation and run the following command:
@@ -90,7 +90,7 @@ To check whether you are using a tagged version, navigate to your SendPortal ins
 git status
 ```
 
-If you see `HEAD detached at v1.0.3`, then you are using a tagged version and don't need to do anything else.
+If you see `HEAD detached at v1.0.3`, or another number starting `v1`, then you are using a tagged version and don't need to do anything else.
 
 If you see `On branch master`, then you will need to switch to a tagged version in order to avoid any risk of getting unwanted changes.
 
