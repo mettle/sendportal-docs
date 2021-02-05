@@ -7,11 +7,11 @@ SendPortal must be integrated with at least one email service provider in order 
 
 SendPortal currently integrates with the following five email service providers:
 
-- [AWS SES](/docs/email-services/aws)
-- [Postmark](/docs/email-services/postmark)
-- [Sendgrid](/docs/email-services/sendgrid)
-- [Mailgun](/docs/email-services/mailgun)
-- [Mailjet](/docs/email-services/mailjet)
+- [AWS SES](/docs/v2/email-services/aws)
+- [Postmark](/docs/v2/email-services/postmark)
+- [Sendgrid](/docs/v2/email-services/sendgrid)
+- [Mailgun](/docs/v2/email-services/mailgun)
+- [Mailjet](/docs/v2/email-services/mailjet)
 
 ## Testing
 

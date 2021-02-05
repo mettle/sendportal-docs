@@ -27,7 +27,7 @@ Segments are very simple and only require a `Name`, which must be unique across 
 
 ### API
 
-Refer to the [Segments API Documentation](/docs/api/segments) for information on how to manage segments through the API.
+Refer to the [Segments API Documentation](/docs/v1/api/segments) for information on how to manage segments through the API.
 
 ## Deleting Segments
 
@@ -42,4 +42,4 @@ To delete a segment through the application interface, navigate to the segments 
 
 ### API
 
-Refer to the [Segments API Documentation](/docs/api/segments) for information on how to delete segments through the API.
+Refer to the [Segments API Documentation](/docs/v1/api/segments) for information on how to delete segments through the API.

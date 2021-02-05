@@ -25,7 +25,7 @@ Additionally, the template **must** include a `content` tag that acts as a place
 {{content}}
 ```
 
-When sending a [campaign](/docs/features/campaigns), the campaign's content will be substituted for this tag.
+When sending a [campaign](/docs/v2/features/campaigns), the campaign's content will be substituted for this tag.
 
 ### Tags
 
