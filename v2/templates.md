@@ -19,41 +19,29 @@ A template requires the following:
 
 The contents of a template must be valid HTML.
 
-Additionally, the template **must** include a `content` tag that acts as a placeholder for the contents of a campaign. To set the placeholder, you should include the following at the desired place in your template:
+Additionally, the template **must** include a `{{content}}` placeholder to inject the contents of a campaign. To set the placeholder, you should include the following at the desired place in your template:
 
 ```
 {{content}}
 ```
 
-When sending a [campaign](/docs/v2/features/campaigns), the campaign's content will be substituted for this tag.
+When sending a [campaign](/docs/v2/features/campaigns), the campaign's content will be substituted for this placeholder.
 
-### Tags
+### Placeholders
 
-As well as the required `content` tag, the following tags are available in templates:
+As well as the required `{{content}}` placeholder, the following placeholders are available in templates:
 
-- `email` – The subscriber's email
-- `first_name` – The subscriber's first name (if set)
-- `last_name` – The subscriber's last name (if set)
-- `unsubscribe_url` – A URL generated to allow the subscriber to unsubscribe
-- `webview_url` – A URL generated to allow the subscriber to view the message in a web view
+- `{{email}}` – The subscriber's email
+- `{{first_name}}` – The subscriber's first name (if set)
+- `{{last_name}}` – The subscriber's last name (if set)
+- `{{unsubscribe_url}}` – A URL generated to allow the subscriber to unsubscribe
+- `{{webview_url}}` – A URL generated to allow the subscriber to view the message in a web view
 
-Tags should be wrapped in pairs of double braces (`{{` & `}}`), e.g.:
+### URL Placeholders
 
-```
-{{ email }}
-```
+The URL placeholders (`{{unsubscribe_url}}` and `{{webview_url}}`) generate the URL only; they do not create a clickable link such as an HTML anchor tag.
 
-Or
-
-```
-{{email}}
-```
-
-### URL Tags
-
-The URL tags (`unsubscribe_url` and `webview_url`) generate the URL only; they do not create a clickable link such as an HTML anchor tag.
-
-This means that simply placing one of these tags in the template will result in the URL being displayed as plain text. You are required to create an appropriate anchor tag and include the URL as the `href` property if you wish to create clickable links. For example:
+This means that simply placing one of these placeholders in the template will result in the URL being displayed as plain text. You are required to create an appropriate anchor tag and include the URL as the `href` property if you wish to create clickable links. For example:
 
 ```html
 <a href="{{unsubscribe_url}}">Click here to unsubscribe</a>
