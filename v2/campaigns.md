@@ -25,7 +25,7 @@ A friendly name for your campaign that is only used within SendPortal. It helps 
 
 #### Subject
 
-The subject of your campaign email. This is what your mail recipients will see in their inbox, so you should try to keep it clear and concise.
+The subject of your campaign email. This is what your mail recipients will see in their inbox, so you should try to keep it clear and concise. The Subject can include placeholders for the Subscriber's `{{first_name}}`, `{{last_name}}` and `{{email}}`. Refer to the Placeholders section of the [Templates](/docs/v2/features/templates) documentation for more information.
 
 #### From Name
 
@@ -51,7 +51,7 @@ Determines whether or not individual email clicks are tracked. If you wish to tr
 
 The body of your campaign email. This is what gets sent to your subscribers, so make it good!
 
-The content can include tags. To understand what tags are available to you, see the Tags section of the [Templates](/docs/v2/features/templates) documentation.
+The content can include placeholders. To understand what placeholders are available to you, see the Placeholders section of the [Templates](/docs/v2/features/templates) documentation.
 
 Once you have filled out the form, click _Save and Continue_. Your campaign will now be marked as a **Draft**.
 

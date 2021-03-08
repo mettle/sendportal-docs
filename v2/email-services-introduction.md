@@ -12,6 +12,7 @@ SendPortal currently integrates with the following five email service providers:
 - [Sendgrid](/docs/v2/email-services/sendgrid)
 - [Mailgun](/docs/v2/email-services/mailgun)
 - [Mailjet](/docs/v2/email-services/mailjet)
+- [SMTP](/docs/v2/email-services/smtp)
 
 ## Testing
 
