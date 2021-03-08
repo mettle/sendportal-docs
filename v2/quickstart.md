@@ -12,9 +12,7 @@ For more detailed instructions for each feature, refer to the relevant article i
 
 ## Create An Email Service
 
-SendPortal integrates with [Mailgun](/docs/v2/email-services/mailgun), [Amazon SES](/docs/v2/email-services/aws), [Sendgrid](/docs/v2/email-services/sendgrid) and [Postmark](/docs/v2/email-services/postmark).
-
-> As per their [Terms of Service](https://postmarkapp.com/terms-of-service#email-types-that-we-dont-allow-on-postmark), Postmark should only be used for transactional mail, and not for marketing messages.
+SendPortal integrates with [Mailgun](/docs/v2/email-services/mailgun), [Mailjet](/docs/v2/email-services/mailjet), [Amazon SES](/docs/v2/email-services/aws), [Sendgrid](/docs/v2/email-services/sendgrid), [Postmark](/docs/v2/email-services/postmark) and [SMTP](/docs/v2/email-services/smtp).
 
 Click on the _Email Services_ link in the sidebar and then click the _Add Email Service_ button.
 
