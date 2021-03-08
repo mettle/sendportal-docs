@@ -51,7 +51,7 @@ Determines whether or not individual email clicks are tracked. If you wish to tr
 
 The body of your campaign email. This is what gets sent to your subscribers, so make it good!
 
-The content can include placeholders. To understand what placeholders are available to you, see the Placeholders section of the [Templates](/docs/v2/features/templates) documentation.
+The content can include placeholders. To understand which placeholders are available to you, see the Placeholders section of the [Templates](/docs/v2/features/templates) documentation.
 
 Once you have filled out the form, click _Save and Continue_. Your campaign will now be marked as a **Draft**.
 
