@@ -45,3 +45,7 @@ You'll also need to enable open tracking and link tracking from the stream setti
 ![/img/docs/providers/postmark/postmark-10.png](/img/docs/providers/postmark/postmark-10.png)
 
 That's it! You're now setup to send and track e-mails using Postmark.
+
+## Message Streams
+
+SendPortal enables the use of [Postmark message streams](https://postmarkapp.com/message-streams). You can supply this in the `Message Stream` field when adding Postmark as an Email Service. If you do not wish to use Message Streams you can leave this field blank.
