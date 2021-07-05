@@ -80,4 +80,4 @@ You can specify one of two sending behaviours for your campaign:
 - `Queue Draft` - this will generate each of your messages as a draft and requires you to dispatch each email individually from the _Messages_ section. This is a good idea if you want to double check how each email will display prior to sending, especially if you're using a complex template that may result in each email varying from subscriber to subscriber. We do not recommend this option if you have a large list of subscribers!
 - `Send Automatically` - this will generate your messages and dispatch them automatically.
 
-> If you find that your campaigns do not send, please ensure you have configured scheduled tasks and queue workers as described in the [Additional Configuration](/docs/v2/getting-started/configuration-and-setup#additional-configuration) section.
+> If you find that your campaigns do not send, please ensure you have configured scheduled tasks and queue workers as described in the [Additional Configuration](/docs/v1/getting-started/configuration-and-setup#additional-configuration) section.
