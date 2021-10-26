@@ -8,7 +8,7 @@ Retrieve a paginated list of all templates.
 
 #### Endpoint
 
-`GET /api/v1/workspaces/{workspaceId}/templates`
+`GET /api/v1/templates`
 
 #### Expected Response Code
 200
@@ -25,7 +25,7 @@ Retrieve a paginated list of all templates.
 #### Sample Request
 
 ```
-GET /api/v1/workspaces/1/templates HTTP/1.1
+GET /api/v1/templates HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
@@ -45,8 +45,8 @@ Accept: application/json
         }
     ],
     "links": {
-        "first": "http://sendportal.test/api/v1/workspaces/1/templates?page=1",
-        "last": "http://sendportal.test/api/v1/workspaces/1/templates?page=1",
+        "first": "http://sendportal.test/api/v1/templates?page=1",
+        "last": "http://sendportal.test/api/v1/templates?page=1",
         "prev": null,
         "next": null
     },
@@ -54,7 +54,7 @@ Accept: application/json
         "current_page": 1,
         "from": 1,
         "last_page": 1,
-        "path": "http://sendportal.test/api/v1/workspaces/1/templates",
+        "path": "http://sendportal.test/api/v1/templates",
         "per_page": 25,
         "to": 1,
         "total": 1
@@ -70,7 +70,7 @@ Retrieve the details of a single template.
 
 #### Endpoint
 
-`GET /api/v1/workspaces/{workspaceId}/templates/{templateId}`
+`GET /api/v1/templates/{templateId}`
 
 #### Expected Response Code
 200
@@ -87,7 +87,7 @@ Retrieve the details of a single template.
 #### Sample Request
 
 ```
-GET /api/v1/workspaces/1/templates/1 HTTP/1.1
+GET /api/v1/templates/1 HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
@@ -115,7 +115,7 @@ Create a new template.
 
 #### Endpoint
 
-`POST /api/v1/workspaces/{workspaceId}/templates`
+`POST /api/v1/templates`
 
 #### Expected Response Code
 201
@@ -137,7 +137,7 @@ Create a new template.
 #### Sample Request
 
 ```
-POST /api/v1/workspaces/1/templates HTTP/1.1
+POST /api/v1/templates HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
@@ -167,7 +167,7 @@ Content-Type: application/json
 
 #### Endpoint
 
-`PUT /api/v1/workspaces/{workspaceId}/templates/{templateId}`
+`PUT /api/v1/templates/{templateId}`
 
 #### Expected Response Code
 200
@@ -192,7 +192,7 @@ Update the details of the given template.
 #### Sample Request
 
 ```
-PUT /api/v1/workspaces/1/templates/3 HTTP/1.1
+PUT /api/v1/templates/3 HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
@@ -226,7 +226,7 @@ Delete the given template.
 
 #### Endpoint
 
-`DELETE /api/v1/workspaces/{workspaceId}/templates/{templateId}`
+`DELETE /api/v1/templates/{templateId}`
 
 #### Expected Response Code
 204
@@ -234,7 +234,7 @@ Delete the given template.
 #### Sample Request
 
 ```
-DELETE /api/v1/workspaces/1/templates/3 HTTP/1.1
+DELETE /api/v1/templates/3 HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json

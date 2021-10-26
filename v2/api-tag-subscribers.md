@@ -8,7 +8,7 @@ Retrieve a list of subscribers who have been assigned the given tag.
 
 #### Endpoint
 
-`GET /api/v1/workspaces/{workspaceId}/tags/{tagId}/subscribers`
+`GET /api/v1/tags/{tagId}/subscribers`
 
 #### Expected Response Code
 200
@@ -26,7 +26,7 @@ Retrieve a list of subscribers who have been assigned the given tag.
 #### Sample Request
 
 ```
-GET /api/v1/workspaces/1/tags/1/subscribers HTTP/1.1
+GET /api/v1/tags/1/subscribers HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
@@ -57,7 +57,7 @@ This endpoint is idempotent, meaning that subscribers who have already been assi
 
 #### Endpoint
 
-`POST /api/v1/workspaces/{workspaceId}/tags/{tagId}/subscribers`
+`POST /api/v1/tags/{tagId}/subscribers`
 
 #### Expected Response Code
 200
@@ -79,7 +79,7 @@ This endpoint is idempotent, meaning that subscribers who have already been assi
 #### Sample Request
 
 ```
-POST /api/v1/workspaces/1/tags/1/subscribers HTTP/1.1
+POST /api/v1/tags/1/subscribers HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
@@ -123,7 +123,7 @@ If you want to assign a tag to additional subscribers without removing existing 
 
 #### Endpoint
 
-`PUT /api/v1/workspaces/{workspaceId}/tags/{tagId}/subscribers`
+`PUT /api/v1/tags/{tagId}/subscribers`
 
 #### Expected Response Code
 200
@@ -145,7 +145,7 @@ If you want to assign a tag to additional subscribers without removing existing 
 #### Sample Request
 
 ```
-PUT /api/v1/workspaces/1/tags/1/subscribers HTTP/1.1
+PUT /api/v1/tags/1/subscribers HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
@@ -187,7 +187,7 @@ Removes the given tag from the subscribers provided in the request.
 
 #### Endpoint
 
-`DELETE /api/v1/workspaces/{workspaceId}/tags/{tagId}/subscribers`
+`DELETE /api/v1/tags/{tagId}/subscribers`
 
 #### Expected Response Code
 200
@@ -209,7 +209,7 @@ Removes the given tag from the subscribers provided in the request.
 #### Sample Request
 
 ```
-DELETE /api/v1/workspaces/1/tags/1/subscribers HTTP/1.1
+DELETE /api/v1/tags/1/subscribers HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json

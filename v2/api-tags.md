@@ -8,7 +8,7 @@ Retrieve a paginated list of tags.
 
 #### Endpoint
 
-`GET /api/v1/workspaces/{workspaceId}/tags`
+`GET /api/v1/tags`
 
 #### Expected Response Code
 200
@@ -24,7 +24,7 @@ Retrieve a paginated list of tags.
 #### Sample Request
 
 ```
-GET /api/v1/workspaces/1/tags HTTP/1.1
+GET /api/v1/tags HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
@@ -43,8 +43,8 @@ Accept: application/json
         }
     ],
     "links": {
-        "first": "<https://sendportal.local/api/v1/workspaces/1/tags?page=1>",
-        "last": "<https://sendportal.local/api/v1/workspaces/1/tags?page=1>",
+        "first": "<https://sendportal.local/api/v1/tags?page=1>",
+        "last": "<https://sendportal.local/api/v1/tags?page=1>",
         "prev": null,
         "next": null
     },
@@ -52,7 +52,7 @@ Accept: application/json
         "current_page": 1,
         "from": 1,
         "last_page": 1,
-        "path": "<https://sendportal.local/api/v1/workspaces/1/tags>",
+        "path": "<https://sendportal.local/api/v1/tags>",
         "per_page": 25,
         "to": 1,
         "total": 1
@@ -68,7 +68,7 @@ Get details of a single tag.
 
 #### Endpoint
 
-`GET /api/v1/workspaces/{workspaceId}/tags/{tagId}`
+`GET /api/v1/tags/{tagId}`
 
 #### Expected Response Code
 200
@@ -84,7 +84,7 @@ Get details of a single tag.
 #### Sample Request
 
 ```
-GET /api/v1/workspaces/1/tags/1 HTTP/1.1
+GET /api/v1/tags/1 HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
@@ -111,7 +111,7 @@ Create a new tag, optionally including subscribers that should have it assigned 
 
 #### Endpoint
 
-`POST /api/v1/workspaces/{workspaceId}/tags`
+`POST /api/v1/tags`
 
 #### Expected Response Code
 201
@@ -139,7 +139,7 @@ Create a new tag, optionally including subscribers that should have it assigned 
 #### Sample Request
 
 ```
-POST /api/workspaces/1/tags HTTP/1.1
+POST /api/tags HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
@@ -182,7 +182,7 @@ Update the details of the given tag. If you wish to adjust the subscribers assoc
 
 #### Endpoint
 
-`PUT /api/v1/workspaces/{workspaceId}/tags/{tagId}`
+`PUT /api/v1/tags/{tagId}`
 
 #### Expected Response Code
 200
@@ -202,7 +202,7 @@ Update the details of the given tag. If you wish to adjust the subscribers assoc
 #### Sample Request
 
 ```
-PUT /api/v1/workspaces/1/tags/2 HTTP/1.1
+PUT /api/v1/tags/2 HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
@@ -232,7 +232,7 @@ Delete the given tag.
 
 #### Endpoint
 
-`DELETE /api/v1/workspaces/{workspaceId}/tags/{tagId}`
+`DELETE /api/v1/tags/{tagId}`
 
 #### Expected Response Code
 204
@@ -240,7 +240,7 @@ Delete the given tag.
 #### Sample Request
 
 ```
-DELETE /api/v1/workspaces/1/tags/2 HTTP/1.1
+DELETE /api/v1/tags/2 HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
