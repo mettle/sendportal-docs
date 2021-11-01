@@ -8,7 +8,7 @@ Retrieve a paginated list of all subscribers.
 
 #### Endpoint
 
-`GET /api/v1/workspaces/{workspaceId}/subscribers`
+`GET /api/v1/subscribers`
 
 #### Expected Response Code
 200
@@ -27,7 +27,7 @@ Retrieve a paginated list of all subscribers.
 #### Sample Request
 
 ```
-GET /api/v1/workspaces/1/subscribers HTTP/1.1
+GET /api/v1/subscribers HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
@@ -58,8 +58,8 @@ Accept: application/json
         }
     ],
     "links": {
-        "first": "<https://sendportal.local/api/v1/workspaces/1/subscribers?page=1>",
-        "last": "<https://sendportal.local/api/v1/workspaces/1/subscribers?page=1>",
+        "first": "<https://sendportal.local/api/v1/subscribers?page=1>",
+        "last": "<https://sendportal.local/api/v1/subscribers?page=1>",
         "prev": null,
         "next": null
     },
@@ -67,7 +67,7 @@ Accept: application/json
         "current_page": 1,
         "from": 1,
         "last_page": 1,
-        "path": "<https://sendportal.local/api/v1/workspaces/1/subscribers>",
+        "path": "<https://sendportal.local/api/v1/subscribers>",
         "per_page": 25,
         "to": 2,
         "total": 2
@@ -83,7 +83,7 @@ Retrieve the details of a single subscriber, including its tags.
 
 #### Endpoint
 
-`GET /api/v1/workspaces/{workspaceId}/subscribers/{subscriberId}`
+`GET /api/v1/subscribers/{subscriberId}`
 
 #### Expected Response Code
 200
@@ -107,7 +107,7 @@ Retrieve the details of a single subscriber, including its tags.
 #### Sample Request
 
 ```
-GET /api/v1/workspaces/1/subscribers/1 HTTP/1.1
+GET /api/v1/subscribers/1 HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
@@ -151,7 +151,7 @@ The rules for creating new subscribers or updating existing subscribers are as f
 
 #### Endpoint
 
-`POST /api/v1/workspaces/{workspaceId}/subscribers`
+`POST /api/v1/subscribers`
 
 #### Expected Response Code
 201
@@ -183,7 +183,7 @@ The rules for creating new subscribers or updating existing subscribers are as f
 #### Sample Request
 
 ```
-POST /api/v1/workspaces/1/subscribers HTTP/1.1
+POST /api/v1/subscribers HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
@@ -225,7 +225,7 @@ Content-Type: application/json
 
 #### Endpoint
 
-`PUT /api/v1/workspaces/{workspaceId}/subscribers/{subscriberId}`
+`PUT /api/v1/subscribers/{subscriberId}`
 
 #### Expected Response Code
 200
@@ -254,7 +254,7 @@ Update the details of the given subscriber.
 #### Sample Request
 
 ```
-PUT /api/v1/workspaces/1/subscribers/2 HTTP/1.1
+PUT /api/v1/subscribers/2 HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
@@ -292,7 +292,7 @@ Delete the given subscriber.
 
 #### Endpoint
 
-`DELETE /api/v1/workspaces/{workspaceId}/subscribers/{subscriberId}`
+`DELETE /api/v1/subscribers/{subscriberId}`
 
 #### Expected Response Code
 204
@@ -300,7 +300,7 @@ Delete the given subscriber.
 #### Sample Request
 
 ```
-DELETE /api/v1/workspaces/1/subscribers/2 HTTP/1.1
+DELETE /api/v1/subscribers/2 HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json

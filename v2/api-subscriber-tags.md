@@ -8,7 +8,7 @@ Retrieve a list of tags that have been assigned to the given subscriber.
 
 #### Endpoint
 
-`GET /api/v1/workspaces/{workspaceId}/subscribers/{subscriberId}/tags`
+`GET /api/v1/subscribers/{subscriberId}/tags`
 
 #### Expected Response Code
 200
@@ -24,7 +24,7 @@ Retrieve a list of tags that have been assigned to the given subscriber.
 #### Sample Request
 
 ```
-GET /api/v1/workspaces/1/subscribers/1/tags HTTP/1.1
+GET /api/v1/subscribers/1/tags HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
@@ -53,7 +53,7 @@ This endpoint is idempotent, meaning that tags already assigned to the subscribe
 
 #### Endpoint
 
-`POST /api/v1/workspaces/{workspaceId}/subscribers/{subscriberId}/tags`
+`POST /api/v1/subscribers/{subscriberId}/tags`
 
 #### Expected Response Code
 200
@@ -73,7 +73,7 @@ This endpoint is idempotent, meaning that tags already assigned to the subscribe
 #### Sample Request
 
 ```
-POST /api/v1/workspaces/1/subscribers/1/tags HTTP/1.1
+POST /api/v1/subscribers/1/tags HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
@@ -113,7 +113,7 @@ If you want to assign additional tags to the subscriber without removing existin
 
 #### Endpoint
 
-`PUT /api/v1/workspaces/{workspaceId}/subscribers/{subscriberId}/tags`
+`PUT /api/v1/subscribers/{subscriberId}/tags`
 
 #### Expected Response Code
 200
@@ -133,7 +133,7 @@ If you want to assign additional tags to the subscriber without removing existin
 #### Sample Request
 
 ```
-PUT /api/v1/workspaces/1/subscribers/1/tags HTTP/1.1
+PUT /api/v1/subscribers/1/tags HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
@@ -173,7 +173,7 @@ Removes the given tags from the subscriber.
 
 #### Endpoint
 
-`DELETE /api/v1/workspaces/{workspaceId}/subscribers/{subscriberId}/tags`
+`DELETE /api/v1/subscribers/{subscriberId}/tags`
 
 #### Expected Response Code
 200
@@ -193,7 +193,7 @@ Removes the given tags from the subscriber.
 #### Sample Request
 
 ```
-DELETE /api/v1/workspaces/1/subscribers/1/tags HTTP/1.1
+DELETE /api/v1/subscribers/1/tags HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json

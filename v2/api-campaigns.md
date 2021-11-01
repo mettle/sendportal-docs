@@ -31,7 +31,7 @@ Retrieve a paginated list of all campaigns.
 
 #### Endpoint
 
-`GET /api/v1/workspaces/{workspaceId}/campaigns`
+`GET /api/v1/campaigns`
 
 #### Expected Response Code
 200
@@ -43,7 +43,7 @@ Retrieve a paginated list of all campaigns.
 #### Sample Request
 
 ```
-GET /api/v1/workspaces/1/campaigns HTTP/1.1
+GET /api/v1/campaigns HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
@@ -78,8 +78,8 @@ Accept: application/json
         }
     ],
     "links": {
-        "first": "<https://sendportal.local/api/v1/workspaces/1/campaigns?page=1>",
-        "last": "<https://sendportal.local/api/v1/workspaces/1/campaigns?page=1>",
+        "first": "<https://sendportal.local/api/v1/campaigns?page=1>",
+        "last": "<https://sendportal.local/api/v1/campaigns?page=1>",
         "prev": null,
         "next": null
     },
@@ -87,7 +87,7 @@ Accept: application/json
         "current_page": 1,
         "from": 1,
         "last_page": 1,
-        "path": "<https://sendportal.local/api/v1/workspaces/1/campaigns>",
+        "path": "<https://sendportal.local/api/v1/campaigns>",
         "per_page": 25,
         "to": 1,
         "total": 1
@@ -103,7 +103,7 @@ Get details of a single campaign.
 
 #### Endpoint
 
-`GET /api/v1/workspaces/{workspaceId}/campaigns/{campaignId}`
+`GET /api/v1/campaigns/{campaignId}`
 
 #### Expected Response Code
 200
@@ -115,7 +115,7 @@ Get details of a single campaign.
 #### Sample Request
 
 ```
-GET /api/v1/workspaces/1/campaigns/1 HTTP/1.1
+GET /api/v1/campaigns/1 HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
@@ -158,7 +158,7 @@ Create a new campaign.
 
 #### Endpoint
 
-`POST /api/v1/workspaces/{workspaceId}/campaigns`
+`POST /api/v1/campaigns`
 
 #### Expected Response Code
 201
@@ -185,7 +185,7 @@ Create a new campaign.
 #### Sample Request
 
 ```
-POST /api/workspaces/1/campaigns HTTP/1.1
+POST /api/campaigns HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
@@ -244,7 +244,7 @@ Update a campaign.
 
 #### Endpoint
 
-`PUT /api/v1/workspaces/{workspaceId}/campaigns/{campaignId}`
+`PUT /api/v1/campaigns/{campaignId}`
 
 #### Expected Response Code
 200
@@ -271,7 +271,7 @@ Update a campaign.
 #### Sample Request
 
 ```
-PUT /api/v1/workspaces/1/campaigns/2 HTTP/1.1
+PUT /api/v1/campaigns/2 HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
@@ -320,7 +320,7 @@ Send a campaign.
 
 #### Endpoint
 
-`POST /api/v1/workspaces/{workspaceId}/campaigns/{campaignId}/send`
+`POST /api/v1/campaigns/{campaignId}/send`
 
 #### Expected Response Code
 200
@@ -335,7 +335,7 @@ None
 #### Sample Request
 
 ```
-POST /api/v1/workspaces/1/campaigns/2/send HTTP/1.1
+POST /api/v1/campaigns/2/send HTTP/1.1
 Host: sendportal.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
