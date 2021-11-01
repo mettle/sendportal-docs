@@ -28,13 +28,13 @@ git clone --depth 1 --branch v2.0.0 https://github.com/mettle/sendportal.git
 
 Once cloned, navigate to the project's root directory and run `composer install` to install SendPortal and its dependencies.
 
-From here, you can move onto the [Configuration & Setup](/docs/v2/getting-started/configuration-and-setup) step.
+From here, you can move on to the [Configuration & Setup](/docs/v2/getting-started/configuration-and-setup) step.
 
 ### Webserver
 
-You will need to a webserver (for example, Apache or nginx), in order to host your SendPortal installation.
+You will need to use a webserver (for example, Apache or nginx), in order to host your SendPortal installation.
 
-When setting up your websever, it should be pointed to the `public` directory in order to correctly serve SendPortal.
+When setting up your webserver, it should be pointed to the `public` directory in order to correctly serve SendPortal.
 
 For example, in nginx:
 
