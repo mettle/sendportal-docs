@@ -10,7 +10,7 @@ When you first begin, you need to add and configure the _"From:"_ email address,
 
 Finally, in order to integrate Sendportal with Mailjet, you need to copy the `API Key` and the `API Secret Key`, which are [generated automatically](https://app.mailjet.com/account/api_keys) when your account is created, into your SendPortal provider configuration. 
 
-![/img/docs/providers/mailjet/mailjet-1.png](/img/docs/providers/mailjet/mailjet-1.png)
+![https://sendportal.io/img/docs/providers/mailjet/mailjet-1.png](https://sendportal.io/img/docs/providers/mailjet/mailjet-1.png)
 
 Alternatively, if you don't want to use the _Master API Key_ (which grants full access to your account), you can set up Sub-account API Keys and limit their scope. 
 
@@ -20,7 +20,7 @@ By default the tracking options for `opens` and `clicks` are activated for all n
 
 To enable tracking however you will have to set up _Webhooks_ from the [Account Information page](https://app.mailjet.com/account/triggers).
 
-![/img/docs/providers/mailjet/mailjet-2.png](/img/docs/providers/mailjet/mailjet-2.png)
+![https://sendportal.io/img/docs/providers/mailjet/mailjet-2.png](https://sendportal.io/img/docs/providers/mailjet/mailjet-2.png)
 
 The URL depends on your domain, but must end with `/api/v1/webhooks/mailjet`. For example, if SendPortal is installed at `https://campaigns.marketing.com`, then each webhook should point to `https://campaigns.marketing.com/api/v1/webhooks/mailjet`.
 
